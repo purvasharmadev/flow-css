@@ -3,16 +3,16 @@
 
 :root{
     /* Main Colors */
-    --PRIMARY-COLOR:red;
-    --SECONDARY-COLOR:BLUE;
+    --PRIMARY-COLOR:#701a75;
+    --SECONDARY-COLOR:#a855f7;
     --BACKGROUND-COLOR:YELLOW;
-    --TEXT-COLOR:white;
+    --TEXT-COLOR:#e9d5ff;
 
     /* Component Colors */
-    --DANGER-COLOR:RED;
-    --SUCESS-COLOR:GREEN;
-    --INFO-COLOR:BLUE;
-    --WARNING-COLOR:YELLOW;
+    --DANGER-COLOR:#dc2626;
+    --SUCESS-COLOR:#65a30d;
+    --INFO-COLOR:#2563eb;
+    --WARNING-COLOR:#ca8a04;
 
 }
 
