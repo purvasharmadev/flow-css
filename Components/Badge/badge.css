@@ -1,0 +1,31 @@
+.badge{
+    position: relative;
+    padding: 0.5rem;
+}
+
+.badge-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.badge-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.badge-status{
+    position: absolute;
+    bottom: 13px;
+    right: 13px;
+    border-radius: 50%;
+    color: var(--SUCESS-COLOR);
+    font-size: 1rem;
+}
+
+.avatar-img{
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+}

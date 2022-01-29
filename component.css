@@ -1,4 +1,5 @@
-@import "Alert/alert.css";
+@import "/Components/Alert/alert.css";
+@import "/Components/Badge/badge.css";
 
 
 :root{
