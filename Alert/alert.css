@@ -1,0 +1,32 @@
+.alert{
+    border: 1px solid;
+    border-radius:10px;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.alert-danger{
+    background-color: var(--DANGER-COLOR);
+    color: var(--TEXT-COLOR);
+}
+
+.alert-sucess{
+    background-color: var(--SUCESS-COLOR);
+    color: var(--TEXT-COLOR);
+}
+
+.alert-info{
+    background-color: var(--INFO-COLOR);
+    color: var(--TEXT-COLOR);
+}
+
+.alert-warning{
+    background-color: var(--WARNING-COLOR);
+    color: var(--TEXT-COLOR);
+}
+
+.alert-close-btn{
+    cursor: pointer;
+    float: right;
+}
