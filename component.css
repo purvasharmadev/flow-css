@@ -8,13 +8,11 @@
     --SECONDARY-COLOR:#a855f7;
     --BACKGROUND-COLOR:YELLOW;
     --TEXT-COLOR:#e9d5ff;
-
     /* Component Colors */
     --DANGER-COLOR:#dc2626;
     --SUCESS-COLOR:#65a30d;
     --INFO-COLOR:#2563eb;
     --WARNING-COLOR:#ca8a04;
-
 }
 
 body{
