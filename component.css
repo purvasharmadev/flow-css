@@ -1,14 +1,15 @@
 @import "/Components/Alert/alert.css";
 @import "/Components/Avatar/Avatar.css";
 @import "/Components/Badge/badge.css";
+@import "/Components/Button/button.css";
 
 
 :root{
     /* Main Colors */
-    --PRIMARY-COLOR:#701a75;
-    --SECONDARY-COLOR:#a855f7;
-    --BACKGROUND-COLOR:YELLOW;
-    --TEXT-COLOR:#e9d5ff;
+    --PRIMARY-COLOR:#7e22ce;
+    --SECONDARY-COLOR:#a78bfa;
+    --BACKGROUND-COLOR:#d8b4fe;
+    --TEXT-COLOR:#faf5ff;
     /* Component Colors */
     --DANGER-COLOR:#dc2626;
     --SUCESS-COLOR:#65a30d;
