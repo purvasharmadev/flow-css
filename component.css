@@ -3,18 +3,19 @@
 
 
 @import "/Components/Alert/alert.css";
+@import "/Components/Avatar/Avatar.css";
 @import "/Components/Badge/badge.css";
+@import "/Components/Button/button.css";
 @import "/Components/Cards/card.css";
 
 
-/* font-family: 'Merriweather', serif; */
 
 :root{
     /* Main Colors */
     --PRIMARY-COLOR:#7e22ce;
     --SECONDARY-COLOR:#a78bfa;
-    --BACKGROUND-COLOR:#f4f0faad;
-    --TEXT-COLOR:#0b0114c2;
+    --BACKGROUND-COLOR:#d8b4fe;
+    --TEXT-COLOR:#faf5ff;
     /* Component Colors */
     --DANGER-COLOR:#dc2626;
     --SUCESS-COLOR:#65a30d;

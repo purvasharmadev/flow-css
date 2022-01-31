@@ -23,9 +23,3 @@
     color: var(--SUCESS-COLOR);
     font-size: 1rem;
 }
-
-.avatar-img{
-    border-radius: 50%;
-    height: 90px;
-    width: 90px;
-}
