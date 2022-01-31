@@ -29,12 +29,12 @@
 
 /* Outline */
 .btn-primary-outline{
-    border: solid var(--PRIMARY-COLOR) 1px;
+    border: 1px solid var(--PRIMARY-COLOR);
     color: var(--PRIMARY-COLOR);
 }
 
 .btn-secondary-outline{
-    border: solid var(--SECONDARY-COLOR) 1px;
+    border: 1px solid var(--SECONDARY-COLOR);
     color: var(--SECONDARY-COLOR);
 }
 
