@@ -15,6 +15,7 @@
     max-width: 100%;
     border-radius: 5px; 
 }
+
 .card-body{
     margin: 0;
     padding: 0.5rem 1rem;
@@ -47,7 +48,8 @@
     padding: 0.2rem 0.2rem;
     text-align: center;
 }
- .card-badge::after{
+
+.card-badge::after{
     clear: both;
 } 
 
@@ -56,6 +58,7 @@
 .ecom-card{
     text-align: center;
 }
+
 .ecom-card .card-footer{
     display: flex;
     flex-direction: column;
@@ -65,6 +68,7 @@
 .ecom-card button{
     display: block;
 }
+
 .ecom-card-price{
     text-decoration: line-through;
 }
@@ -107,5 +111,4 @@
 
 .card-badge:hover{
     color: red;
-
 }
