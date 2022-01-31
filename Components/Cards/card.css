@@ -1,0 +1,111 @@
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px; /* 5px rounded corners */
+    background-color: var(--BACKGROUND-COLOR);
+    transition: 0.3s;
+    font-family: var(--MAIN-FONT);
+    overflow: hidden;  
+}
+
+.card-header{
+    margin: 0;
+}
+
+.card-header img{
+    max-width: 100%;
+    border-radius: 5px; 
+}
+.card-body{
+    margin: 0;
+    padding: 0.5rem 1rem;
+}
+
+.card-body .card-heading{
+    color: var(--PRIMARY-COLOR);
+    padding: 0;
+    margin: 0;
+}
+
+.card-body .card-text{
+    padding: 0;
+    margin-top: 0;
+    color: var(--SECONDARY-COLOR);
+}
+
+.card-footer button{
+    display: block;
+    width: 100%;
+}
+
+/* Card Badge */
+.card-badge{
+    color: var(--SECONDARY-COLOR);
+    cursor: pointer;
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.2rem 0.2rem;
+    text-align: center;
+}
+ .card-badge::after{
+    clear: both;
+} 
+
+
+/* Product Card */
+.ecom-card{
+    text-align: center;
+}
+.ecom-card .card-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+}
+
+.ecom-card button{
+    display: block;
+}
+.ecom-card-price{
+    text-decoration: line-through;
+}
+
+
+/* Horizontal Card */
+.card-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-flex .card-header{
+    flex-basis: 50%;
+}
+
+.card-flex .card-body{
+    flex-basis: 50%;
+}
+
+
+/* Card With Overlay */
+.card-overlay{
+    position: relative;
+}
+
+.card-overlay .card-body{
+    background-color: black;
+    opacity: 0.9;
+    position: absolute;
+    width: 91.5%;
+    padding: 2rem;
+    bottom: 0px;
+}
+
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-badge:hover{
+    color: red;
+
+}
