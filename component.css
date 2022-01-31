@@ -1,29 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@100&family=Sacramento&display=swap');
+
+
+
 @import "/Components/Alert/alert.css";
 @import "/Components/Avatar/Avatar.css";
 @import "/Components/Badge/badge.css";
 @import "/Components/Button/button.css";
+@import "/Components/Cards/card.css";
+
 
 
 :root{
     /* Main Colors */
     --PRIMARY-COLOR:#7e22ce;
     --SECONDARY-COLOR:#a78bfa;
-    --BACKGROUND-COLOR:#d8b4fe;
+    --BACKGROUND-COLOR:#f3eff7b7;
     --TEXT-COLOR:#faf5ff;
     /* Component Colors */
     --DANGER-COLOR:#dc2626;
     --SUCESS-COLOR:#65a30d;
     --INFO-COLOR:#2563eb;
     --WARNING-COLOR:#ca8a04;
+    /* Font-Family */
+    --MAIN-FONT:'Merriweather', serif;
 }
 
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--MAIN-FONT);
 }
 
 .container{
     margin: auto;
     max-width: 900px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
 }

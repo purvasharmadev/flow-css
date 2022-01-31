@@ -4,106 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="component.css">
+    <link rel="stylesheet" href="/component.css">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
-    <title>Flow</title>
+    <title>Card</title>
 </head>
-<body>
-
-<div class="container">
-    <h1>Alerts</h1>
-    
-            <!-- Alert Danger -->
-    <div class="alert alert-danger">
-        <span class="alert-close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
-        Danger! Indicates a dangerous or potentially negative action.
-    </div>
-
-    <!-- Alert Sucess -->
-    <div class="alert alert-sucess">
-        <span class="alert-close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
-        Success! Indicates a successful or positive action.
-    </div>
-
-    <!-- Alert Info -->
-    <div class="alert alert-info">
-        <span class="alert-close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
-        Info! Indicates a neutral informative change or action.
-    </div>
-
-    <!-- Alert Warning -->
-    <div class="alert alert-warning">
-        <span class="alert-close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
-        Warning! Indicates a warning that might need attention.
-    </div>
-    <hr>
-    <h1>Avatar</h1>
-    <!-- Avatar Circle -->
-        <img src="/Assets/developer.png"  class="avatar avatar-sm" alt="" srcset="">
-        <img src="/Assets/developer.png"  class="avatar avatar-md" alt="" srcset="">
-        <img src="/Assets/developer.png"  class="avatar avatar-lg" alt="" srcset="">
-
-        <br>
-        <!-- Avatar Square -->
-        <img src="/Assets/developer.png"  class="avatar-square avatar-sm" alt="" srcset="">
-        <img src="/Assets/developer.png"  class="avatar-square avatar-md" alt="" srcset="">
-        <img src="/Assets/developer.png"  class="avatar-square avatar-lg" alt="" srcset="">
-
-        <hr>
-    <h1>Badge</h1>
-    <!-- Badge on the right -->
-    <span class="badge">
-        badge with text <span class="badge-right">7</span>
-    </span>
-    <br>
-
-    <!-- badge on the left -->
-    <span class="badge">
-        badge with text on left <span class="badge-left">7</span>
-    </span>
-    <br>
-
-    <!-- badge on an icon -->
-    <span class="badge">
-        badge on a icon <i class="fa fa-home"></i> <i class="fa fas fa-warning badge-right"></i>
-    </span>
-    <br>
-
-    <!-- Badge on an Avatar -->
-    <span class="badge">
-        <img src="/Assets/developer.png" class="avatar avatar-sm" alt="" srcset=""> <span class="badge-status">🔴</span>
-    </span>
-  
-      <hr>
-
-        <!-- Buttons -->
-        <h1>Buttons</h1>
-        <button class="btn">Default Button</button>
-        <button class="btn btn-primary">Primary Button</button>
-        <button class="btn btn-secondary">Secondary button</button>
-        <button class="btn btn-primary-outline">Primary Outline</button>
-        <button class="btn btn-secondary-outline">Secondary Outline</button>
-        <button class="btn btn-primary" ><a class="btn-link" href="#">link</a></button>
-    
-        <!-- Buttons with icons -->
-        <h2>Icon Button</h2>
-        <button class="btn  btn-icon"><i class="fa fas fa-home"></i></button>
-        <button class="btn btn-icon"><i class="fa fa-bars"></i></button>
-        <button class="btn btn-icon"><i class="fa fa-home"></i> Home</button>
-        <button class="btn btn-icon"><i class="fa fa-bars"></i> Menu</button>
-    
-        <!-- Float Buttons -->
-        <h2>Float Button</h2>
-        <button class="btn-float"><i class="fa fa-arrow-circle-o-up btn-float"></i></button>
-        <button class="btn-float"><i class="fa fa-plus-circle btn-float"></i></button>
-
-
-
-<hr>
-    <!-- Cards -->
+<div>
     <h1>Cards</h1>
     <div class="container flex-container">
         <!-- Only Text card -->
@@ -221,10 +129,12 @@
     
                      </div>
                     </div>
-
+                </div>
+                
                 <br>
 
             <!-- Card with text overlay -->
+            <h3>Card with text overlay</h3>
             <div class="card">
                 <div class="card-header card-overlay">
                     <img src="/Assets/developer.png" alt="" srcset="">
@@ -235,7 +145,7 @@
                 </div>
             </div>                
 </div>
-</div>
-    
+ 
+
 </body>
 </html>
