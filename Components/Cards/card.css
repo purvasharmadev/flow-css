@@ -1,23 +1,26 @@
 .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 5px; /* 5px rounded corners */
+    border-radius: 5px;
     background-color: var(--BACKGROUND-COLOR);
-    transition: 0.3s;
     font-family: var(--MAIN-FONT);
-    overflow: hidden;  
+    overflow: hidden; 
+    /* text-align: center; */
 }
 
 .card-header{
     margin: 0;
+    text-align: center;
 }
 
 .card-header img{
     max-width: 100%;
     border-radius: 5px; 
 }
+
 .card-body{
     margin: 0;
     padding: 0.5rem 1rem;
+    text-align: center;
 }
 
 .card-body .card-heading{
@@ -32,10 +35,16 @@
     color: var(--SECONDARY-COLOR);
 }
 
-.card-footer button{
+.card-footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* .card-footer button{
     display: block;
     width: 100%;
-}
+} */
 
 /* Card Badge */
 .card-badge{
@@ -64,6 +73,7 @@
 
 .ecom-card button{
     display: block;
+    margin-bottom: 1rem;
 }
 .ecom-card-price{
     text-decoration: line-through;
@@ -92,12 +102,16 @@
 }
 
 .card-overlay .card-body{
-    background-color: black;
+    background-color: var(--SECONDARY-COLOR);
     opacity: 0.9;
     position: absolute;
-    width: 91.5%;
+    width: 95%;
     padding: 2rem;
     bottom: 0px;
+}
+
+.card-overlay .card-text{
+    color: black;
 }
 
 
