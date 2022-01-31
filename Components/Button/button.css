@@ -1,0 +1,85 @@
+.btn{
+    border: none;
+    border-radius:5px;    
+    background-color: none;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-primary{
+    background-color: var(--PRIMARY-COLOR);
+    color: var(--TEXT-COLOR);
+}
+
+.btn-secondary{
+    background-color: var(--SECONDARY-COLOR);
+    color: var(--TEXT-COLOR);
+}
+
+
+/* Link */
+.btn-link{
+    text-decoration: none;
+    color: var(--TEXT-COLOR);
+}
+
+
+/* Outline */
+.btn-primary-outline{
+    border: 1px solid var(--PRIMARY-COLOR);
+    color: var(--PRIMARY-COLOR);
+}
+
+.btn-secondary-outline{
+    border: 1px solid var(--SECONDARY-COLOR);
+    color: var(--SECONDARY-COLOR);
+}
+
+
+/* Icon */
+.btn-icon{
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    color: var(--PRIMARY-COLOR);
+}
+
+/* Float */
+.btn-float{
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: var(--PRIMARY-COLOR);
+    font-size: 2.5rem;
+}
+
+
+/* Hover Classes */
+.btn-primary:hover{
+    background-color: #490c83;
+}
+
+.btn-secondary:hover{
+    background-color: #a45bf1e0;
+}
+.btn-primary-outline:hover{
+    background-color: var(--PRIMARY-COLOR);
+    color: var(--TEXT-COLOR);
+}
+
+.btn-secondary-outline:hover{
+    background-color: var(--SECONDARY-COLOR);
+    color: var(--TEXT-COLOR);
+}
+
+.btn-icon:hover{
+    background-color: var(--SECONDARY-COLOR);
+    color: var(--TEXT-COLOR);
+}
+
+.btn-float:hover{
+    box-shadow: 0px 0px 8px 0px var(--BACKGROUND-COLOR) ;
+
+}

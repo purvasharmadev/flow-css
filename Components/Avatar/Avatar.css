@@ -1,0 +1,27 @@
+.avatar{
+    border: solid;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar-square{
+    border: solid;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.avatar-sm{
+    height: 60px;
+    width: 60px;
+}
+
+.avatar-md{
+    height:90px;
+    width: 90px;
+}
+
+.avatar-lg{
+    height: 130px;
+    width: 130px;
+}
+
