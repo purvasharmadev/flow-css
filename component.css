@@ -7,15 +7,17 @@
 @import "/Components/Badge/badge.css";
 @import "/Components/Button/button.css";
 @import "/Components/Cards/card.css";
+@import "/Components/Image/image.css";
+@import "/Components/Input/input.css";
 
 
 
 :root{
     /* Main Colors */
     --PRIMARY-COLOR:#7e22ce;
-    --SECONDARY-COLOR:#a78bfa;
-    --BACKGROUND-COLOR:#f3eff7b7;
-    --TEXT-COLOR:#faf5ff;
+    --SECONDARY-COLOR: #a78bfa   ;
+    --BACKGROUND-COLOR:#F3F4F6;
+    --TEXT-COLOR:white;
     /* Component Colors */
     --DANGER-COLOR:#dc2626;
     --SUCESS-COLOR:#65a30d;
@@ -41,4 +43,5 @@ body{
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+
 }
