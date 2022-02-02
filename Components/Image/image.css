@@ -1,0 +1,8 @@
+.img-responsive{
+    max-inline-size: 100%;
+    block-size: 100%;
+}
+
+.img-rounded{
+    border-radius: 50% ;
+}
