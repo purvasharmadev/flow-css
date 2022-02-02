@@ -6,7 +6,6 @@
     overflow: hidden; 
     width:20rem;
     max-width:55rem;
-    /* text-align: center; */
 }
 
 .card-header{
@@ -43,10 +42,6 @@
     flex-wrap: wrap;
 }
 
-/* .card-footer button{
-    display: block;
-    width: 100%;
-} */
 
 /* Card Badge */
 .card-badge{
@@ -121,8 +116,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* left: 0px; */
-
 }
 
 .card-overlay .card-text{
