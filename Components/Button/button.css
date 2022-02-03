@@ -3,7 +3,7 @@
     border-radius:5px;    
     background-color: none;
     cursor: pointer;
-    font-weight: 400;
+    font-weight: 200;
     padding: 1rem 2rem;
     text-align: center;
     text-decoration: none;
@@ -24,6 +24,13 @@
 .btn-link{
     text-decoration: none;
     color: var(--TEXT-COLOR);
+}
+
+.active{
+    color: var(--TEXT-COLOR);
+    font-weight: bolder;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--SECONDARY-COLOR);
 }
 
 

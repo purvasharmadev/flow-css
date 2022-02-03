@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow | Documentation</title>
+    <link rel="stylesheet" href="/component.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+    <nav>
+        <h2 class="nav-brand"><a href="/index.html" class="nav-link btn-link">FlowCss</a></h2>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="/index.html" class="nav-link btn-link">Getting Started</a></li>
+            <li class="nav-item"><a href="/doc.html" class="active nav-link btn-link">Documentation</a></li>
+            <li class="nav-item"><a href="/" class="nav-link btn-link">Github</a></li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <!-- COLUMN-1 -->
+        <div class="col-1 sidebar">
+            <a class="btn btn-link " href="#alert">Alerts</a>
+            <a class="btn btn-link" href="#avatar">Avatar</a>
+            <a class="btn btn-link" href="#badge">Badge</a>
+            <a href="#button" class="btn btn-link">Button</a>
+            <a class="btn btn-link" href="#cards">Cards</a>
+            <a class="btn btn-link" href="#image">Image</a>
+            <a class="btn btn-link" href="#input">Input</a>
+        </div>
+
+        <!--COLUMN-2  -->
+        <div class="col-2">
+
+
+
+
+            <!-- ALERT -->
+            <h1 id="alert">Alerts</h1>
+
+            <!-- Alert Danger -->
+            <div class="alert alert-danger">
+                <span class="alert-close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
+                Danger! Indicates a dangerous or potentially negative action.
+            </div>
+
+            <!-- Alert Sucess -->
+            <div class="alert alert-sucess">
+                <span class="alert-close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
+                Success! Indicates a successful or positive action.
+            </div>
+
+            <!-- Alert Info -->
+            <div class="alert alert-info">
+                <span class="alert-close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
+                Info! Indicates a neutral informative change or action.
+            </div>
+
+            <!-- Alert Warning -->
+            <div class="alert alert-warning">
+                <span class="alert-close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
+                Warning! Indicates a warning that might need attention.
+            </div>
+            <hr>
+            <h1 id="avatar">Avatar</h1>
+            <!-- Avatar Circle -->
+            <img src="/Assets/developer.png" class="avatar avatar-sm" alt="developer" srcset="">
+            <img src="/Assets/developer.png" class="avatar avatar-md" alt="developer" srcset="">
+            <img src="/Assets/developer.png" class="avatar avatar-lg" alt="developer" srcset="">
+
+            <br>
+            <!-- Avatar Square -->
+            <img src="/Assets/developer.png" class="avatar-square avatar-sm" alt="developer" srcset="">
+            <img src="/Assets/developer.png" class="avatar-square avatar-md" alt="developer" srcset="">
+            <img src="/Assets/developer.png" class="avatar-square avatar-lg" alt="developer" srcset="">
+
+            <hr>
+            <h1 id="badge">Badge</h1>
+            <!-- Badge on the right -->
+            <span class="badge">
+                badge with text <span class="badge-right">7</span>
+            </span>
+            <br>
+
+            <!-- badge on the left -->
+            <span class="badge">
+                badge with text on left <span class="badge-left">7</span>
+            </span>
+            <br>
+
+            <!-- badge on an icon -->
+            <span class="badge">
+                badge on a icon <i class="fa fa-home"></i> <i class="fa fas fa-warning badge-right"></i>
+            </span>
+            <br>
+
+            <!-- Badge on an Avatar -->
+            <span class="badge">
+                <img src="/Assets/developer.png" class="avatar avatar-sm" alt="developer" srcset=""> <span
+                    class="badge-status">🔴</span>
+            </span>
+
+            <hr>
+
+            <!-- Buttons -->
+            <h1 id="button">Buttons</h1>
+            <button class="btn">Default Button</button>
+            <button class="btn btn-primary">Primary Button</button>
+            <button class="btn btn-secondary">Secondary button</button>
+            <button class="btn btn-primary-outline">Primary Outline</button>
+            <button class="btn btn-secondary-outline">Secondary Outline</button>
+            <button class="btn btn-primary"><a class="btn-link" href="#">link</a></button>
+
+            <!-- Buttons with icons -->
+            <h2>Icon Button</h2>
+            <button class="btn  btn-icon"><i class="fa fas fa-home"></i></button>
+            <button class="btn btn-icon"><i class="fa fa-bars"></i></button>
+            <button class="btn btn-icon"><i class="fa fa-home"></i> Home</button>
+            <button class="btn btn-icon"><i class="fa fa-bars"></i> Menu</button>
+
+            <!-- Float Buttons -->
+            <h2>Float Button</h2>
+            <button class="btn-float"><i class="fa fa-arrow-circle-o-up btn-float"></i></button>
+            <button class="btn-float"><i class="fa fa-plus-circle btn-float"></i></button>
+
+
+
+            <hr>
+
+            <!-- Cards -->
+            <h1 id="cards">Cards</h1>
+            <!-- Only Text card -->
+            <h3>Card with Text</h3>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-heading">Card</h3>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi voluptatibus
+                        inventore illum maiores dolorum, sunt quis tenetur quae nulla voluptas?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, magnam.</p>
+                </div>
+            </div>
+
+            <!-- Simple Card -->
+            <h3>Simple card</h3>
+            <div class="card">
+                <div class="card-header">
+                    <img src="/Assets/developer.png" alt="developer" srcset="">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-heading">Card</h3>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, magnam.</p>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Primary</button>
+                        <button class="btn btn-secondary">Secondary</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Simple card with badge -->
+            <h3>Simple Card with Badge</h3>
+            <div class="card">
+
+                <div class="card-header">
+                    <span class="card-badge"><i class="fa fas fa-heart"></i></span>
+                    <img src="/Assets/developer.png" alt="developer" srcset="">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-heading">Card</h3>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, magnam.</p>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Primary</button>
+                        <button class="btn btn-secondary">Secondary</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Simple Card with Dismiss -->
+            <h3>Simple Card with Dismiss</h3>
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-badge">&times;</span>
+
+                    <img src="/Assets/developer.png" alt="developer" srcset="">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-heading">Card</h3>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, magnam.</p>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Primary</button>
+                        <button class="btn btn-secondary">Secondary</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Product card -->
+            <h3>Ecommerce card</h3>
+            <div class="card ecom-card">
+                <div class="card-header">
+                    <img src="/Assets/developer.png" alt="developer" srcset="">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-heading">Product Name</h3>
+                    <p class="card-text">Rs. 1999 only. <span class="ecom-card-price">Rs. 2999</span> </p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Primary</button>
+                    <button class="btn btn-secondary">Secondary</button>
+                </div>
+            </div>
+
+            <!-- E-com card with badge-->
+            <h3>Ecommerce card with badge</h3>
+            <div class="card ecom-card">
+                <div class="card-header">
+                    <span class="card-badge"><i class="fa fas fa-heart"></i></span>
+                    <img src="/Assets/developer.png" alt="developer" srcset="">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-heading">Product Name</h3>
+                    <p class="card-text">Rs. 1999 only. <span class="ecom-card-price">Rs. 2999</span> </p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Primary</button>
+                    <button class="btn btn-secondary">Secondary</button>
+                </div>
+            </div>
+
+            <!-- Horizontal card -->
+            <h3>Horizontal card</h3>
+
+            <div class="card">
+                <div class="card-flex">
+                    <div class="card-header">
+                        <img src="/Assets/developer.png" class="img-responsive" alt="developer" srcset="">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-heading">Product Name</h3>
+                        <p class="card-text">Rs. 1999 only. <span class="ecom-card-price">Rs. 2999</span> </p>
+
+                        <div class="card-footer">
+                            <button class="btn btn-primary">Primary</button>
+                            <button class="btn btn-secondary">Secondary</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- Card with text overlay -->
+            <h3>Card with text overlay</h3>
+
+            <div class="card">
+                <div class="card-header card-overlay">
+                    <img src="/Assets/developer.png" alt="developer" srcset="">
+                    <div class="card-body">
+                        <h3 class="card-text">Out OF Stocks</h3>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <!-- Images -->
+    
+            <h1 id="image">Images</h1>
+            <!-- Responsive Image -->
+            <h3>Responsive Image</h3>
+            <img src="/Assets/rm-nature.jpg" class="img-responsive" alt="demo" srcset="">
+            <br>
+            <h3>Rounded Image</h3>
+            <img src="/Assets/demo-pic.jpg" class="img-rounded img-responsive" alt="demo" srcset="">
+            <hr>
+            <!-- Inputs -->
+    
+            <h1 id="input">Input</h1>
+    
+            <!-- TextArea -->
+            <div class="input-container">
+                <h2>Textarea</h2>
+                <textarea class="input input-textarea" name="input-textarea" id="#teaxArea"
+                    placeholder="Enter a comment"></textarea>
+                <button class="btn btn-icon input-btn-left"><i class="fa fas fa-comment"></i>Comment</button>
+            </div>
+            <br>
+            <!-- Form -->
+            <!-- Login Form -->
+            <div class="input-container">
+                <form action="" class="form-container">
+                    <h2>Login Form</h2>
+                    <label for="username">Name</label>
+                    <input type="text" name="username" placeholder="Enter your name">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Enter you email">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Enter your Password">
+                    <button class="btn btn-primary input-btn-left">Log in</button>
+                </form>
+            </div>
+            <br>
+            <!-- Error input -->
+            <div class="input-container">
+                <form action="" class="form-container">
+                    <h2>Error input</h2>
+                    <label for="username">Name</label>
+                    <input class="error" type="text" name="username" placeholder="Enter you name" value="wrong value">
+                    <p class="error-msg">* please enter correct value</p>
+                    <button class="btn btn-primary input-btn-left">Log In</button>
+                </form>
+            </div>
+        </div>
+    
+        </div>
+
+
+
+    </div>
+
+    <!-- </div> -->
+    <a href="#top" class="btn-to-top btn-float"><i class="fa fa-arrow-circle-o-up btn-float"></i></a>
+
+    </div>
+
+</body>
+
+</html>
