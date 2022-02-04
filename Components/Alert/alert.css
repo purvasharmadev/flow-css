@@ -26,6 +26,26 @@
     color: var(--TEXT-COLOR);
 }
 
+.alert-danger-outline{
+    border: 2px solid var(--DANGER-COLOR);
+    color: var(--DANGER-COLOR);
+}
+
+.alert-info-outline{
+    border: 2px solid var(--INFO-COLOR);
+    color: var(--INFO-COLOR);
+}
+
+.alert-sucess-outline{
+    border: 2px solid var(--SUCESS-COLOR);
+    color: var(--SUCESS-COLOR);
+}
+
+.alert-warning-outline{
+    border: 2px solid var(--WARNING-COLOR);
+    color: var(--WARNING-COLOR);
+}
+
 .alert-close-btn{
     cursor: pointer;
     float: right;

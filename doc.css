@@ -33,7 +33,7 @@ nav{
 /* Landing page */
 main{
     margin-top: 4em;
-    padding: 6rem 2rem;
+    padding: 6rem 4rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -44,6 +44,7 @@ main{
 main h1{
     font-size: 3rem;
     color: #133b4f;
+    letter-spacing: 1.5px;
     margin: 0;
 }
 
@@ -52,6 +53,7 @@ main h2{
     color: var(--SECONDARY-COLOR);
     font-weight: 400;
     margin-top: 0;
+    margin-bottom: 5px;
 }
 
 main p{
@@ -59,9 +61,12 @@ main p{
     font-weight: 400;
     color: #333;
     line-height:2.094rem;
+    margin-top: 0;
     margin: 1.95rem 0;
 }
 .content-left{
+    margin: 1rem;
+    padding: 1rem;
     width: 50%;
     height: auto;
 }
@@ -87,14 +92,20 @@ main p{
     display: flex;
     flex-direction: column;
     width: 12rem;
-    height: 100%;
     background-color: var(--BACKGROUND-COLOR);
 }
 
 .sidebar{
     position: fixed;
     top: 4rem;
+    bottom: 0;
+    height: auto;
     z-index: 1;
+    overflow: auto;
+}
+.sidebar h4{
+    margin: 5px 5px;
+    color: var(--SECONDARY-COLOR);
 }
 
 .sidebar .btn-link{
@@ -111,6 +122,66 @@ main p{
     padding: 2rem;
 }
 
+.section-doc{
+    height: auto;
+    overflow: auto;
+}
+
+.section-doc h2{
+    color: var(--PRIMARY-COLOR);
+    letter-spacing: 2px;
+}
+
+.section-doc p{
+    color: var(--SECONDARY-COLOR);
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 2rem;
+}
+
+.section-doc footer{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.highlight{
+    color: var(--PRIMARY-COLOR);
+    font-weight: bold;
+    border-bottom:1px solid var(--SECONDARY-COLOR);
+    letter-spacing: 1.5px;
+    margin: 0 1.5px;
+}
+
+.col-2 .container-highlight{
+    border: solid;
+    margin:2rem auto;
+    background-color: var(--BACKGROUND-COLOR);
+    color: var(--PRIMARY-COLOR);
+    text-align: center;
+    padding: 2rem;   
+}
+
+.col-2 .container-code{
+    background-color: var(--PRIMARY-COLOR);
+    color: var(--TEXT-COLOR);
+    font-size: 1.3rem;
+    font-weight: 400;
+    overflow: auto;
+}
+
+.c-div{
+    color: var(--DANGER-COLOR);
+}
+.c-class{
+    color: var(--INFO-COLOR);
+
+}
+.c-attr{
+    color: var(--WARNING-COLOR);
+
+}
 
 .btn-to-top{
     z-index: 3;
