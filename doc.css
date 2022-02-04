@@ -166,10 +166,11 @@ main p{
 .col-2 .container-code{
     background-color: var(--PRIMARY-COLOR);
     color: var(--TEXT-COLOR);
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 400;
     overflow: auto;
 }
+
 
 .c-div{
     color: var(--DANGER-COLOR);

@@ -11,17 +11,17 @@
 }
 
 .avatar-sm{
-    height: 60px;
-    width: 60px;
+    height: 3.75rem;
+    width: 3.75rem
 }
 
 .avatar-md{
-    height:90px;
-    width: 90px;
+    height:5.625rem;
+    width: 5.625rem;
 }
 
 .avatar-lg{
-    height: 130px;
-    width: 130px;
+    height: 8.125rem;
+    width: 8.125rem;
 }
 
