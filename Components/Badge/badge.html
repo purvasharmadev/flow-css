@@ -1,34 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
-  <link rel="stylesheet" href="/component.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/component.css">
 
     <title>Badge</title>
 </head>
+
 <body>
-    <h1>Badge</h1>
-    <span class="badge">
-        badge with text <span class="badge-right">7</span>
-    </span>
-    <br>
-    <span class="badge">
-        badge with text on left <span class="badge-left">7</span>
-    </span>
-    <br>
-    <span class="badge">
-        badge on a icon <i class="fa fa-home"></i> <i class="fa fas fa-warning badge-right"></i>
-    </span>
-    <br>
-    <span class="badge">
-        <img src="/Assets/developer.png" class="avatar avatar-md" alt="" srcset=""> <span class="badge-status">🔴</span>
-    </span>
+    <nav>
+        <h2 class="nav-brand"><a href="/index.html" class="nav-link btn-link">GlowCss</a></h2>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="/index.html" class="nav-link btn-link">Getting Started</a></li>
+            <li class="nav-item"><a href="/doc.html" class="active nav-link btn-link">Documentation</a></li>
+            <li class="nav-item"><a href="/" class="nav-link btn-link">Github</a></li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <!-- COLUMN-1 -->
+        <section class="col-1 sidebar">
+            <h4>Quick Start</h4>
+            <a class="btn btn-link" href="/doc.html">Installation</a>
+
+            <h4>Components</h4>
+            <a class="btn btn-link " href="/Components/Alert/alert.html">Alerts</a>
+            <a class="btn btn-link" href="/Components/Avatar/avatar.html">Avatar</a>
+            <a class="btn btn-link active" href="/Components/Badge/badge.html">Badge</a>
+            <a href="/Components/Button/button.html" class="btn btn-link">Button</a>
+            <a class="btn btn-link" href="/Components/Cards/card.html">Cards</a>
+            <a class="btn btn-link" href="/Components/Image/image.html">Image</a>
+            <a class="btn btn-link" href="/Components/Input/input.html">Input</a>
+        </section>
+
+        <!--COLUMN-2  -->
+        <section class="col-2 section-doc">
+            <h2>Badge</h2>
+            <p> Bagdes are small circles positioned on the top-left or top-right of the parent component to notify the
+                new changes, They can be used to display numbers, online/offline status, etc.</p>
+            <p><span class="highlight">Note:</span> Parent element here is a span i.e an inline element which inherit
+                the width according to the content.</p>
+
+            <hr>
+            <div class="container">
+                <!-- Badges Over Texts -->
+
+                <h3>Badges over Texts</h3>
+                <p>You can use class <span class="highlight">badge</span> to the parent element to position it relative
+                    and then
+                    <span class="highlight">badge-right | badge-left</span> to the child element to get it positioned
+                    around the parent element.
+                </p>
+
+
+                <div class=" badge-container">
+                    <span class="badge-span badge">
+                        text<span class="badge-right badge-circle">+7</span>
+                    </span>
+
+                    <span class="badge-span badge">
+                        text<span class="badge-left badge-circle-yellow">+7</span>
+                    </span>
+
+                </div>
+                <div class="container container-highlight container-code">
+                    <code>
+                        <p> &lt;-- Badge on the top-right corner --&gt;</p>
+                        <!-- badge-right -->
+                        &lt;<span class="c-div">span</span> <span class="c-class"> class</span> = <span
+                            class="c-attr">"badge badge-span"</span>
+                        &gt; text
+                        <br>
+                        &lt;<span class="c-div">span</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"badge-right badge-circle"</span> &gt;
+                        +7 &lt;<span class="c-div">/span</span>&gt;
+                        <br> &lt;<span class="c-div">/span</span>&gt;
+
+                        <!-- Badge-left -->
+                        <p> &lt;-- Badge on the top-left corner --&gt;</p>
+                        &lt;<span class="c-div">span</span> <span class="c-class"> class</span> = <span
+                            class="c-attr">"badge badge-span"</span>
+                        &gt;
+                        <br>
+                        &lt;<span class="c-div">span</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"badge-left badge-circle"</span> &gt;
+                        +7 &lt;<span class="c-div">/span</span>&gt;
+                        <br> &lt;<span class="c-div">/span</span>&gt;
+
+                    </code>
+
+                </div>
+
+                <!-- Badges Over Avatar -->
+
+                <h3>Badges Over Avatar</h3>
+                <p>You can use <span class="highlight">badge-status</span> and <span class="highlight">badge-status-lg |
+                        badge-status-md | badge-status-sm</span>
+                    respective to the size of avatar you are using.
+                </p>
+                <div class="container">
+                    <span class="badge">
+                        <img src="/Assets/developer.png" class="avatar avatar-lg" alt="" srcset=""> <span
+                            class="badge-status badge-status-lg">🔴</span>
+                    </span>
+                    <span class="badge">
+                        <img src="/Assets/developer.png" class="avatar avatar-md" alt="" srcset=""> <span
+                            class="badge-status badge-status-md">🔴</span>
+
+                    </span>
+                    <span class="badge">
+                        <img src="/Assets/developer.png" class="avatar avatar-sm" alt="" srcset=""> <span
+                            class="badge-status badge-status-sm">🔴</span>
+
+                    </span>
+                </div>
+
+                <div class="container container-highlight container-code">
+                    <code>
+                        <!-- badges on small-sized avatar -->
+                        <p> &lt;-- Badge on small avatar --&gt;</p>
+                        &lt;<span class="c-div">span</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"badge badge-span"</span> &gt;
+                        <br> &lt;<span class="c-div">img</span> src = <span class="c-attr">"img.png"</span> <span
+                            class="c-class">class</span> =
+                        <span class="c-attr">"avatar avatar-sm"</span> alt = "..." &gt;
+                        <br>
+                        &lt;<span class="c-div">span</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"badge-status badge-status-sm"</span> &gt;
+                        +7 &lt;<span class="c-div">/span</span>&gt;
+                        <br> &lt;<span class="c-div">/span</span>&gt;
+
+                        <!-- Badges on medium avatar -->
+                        <p> &lt;-- Badge on medium-sized avatar --&gt;</p>
+                        &lt;<span class="c-div">span</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"badge badge-span"</span> &gt;
+                        <br> &lt;<span class="c-div">img</span> src = <span class="c-attr">"img.png"</span> <span
+                            class="c-class">class</span> =
+                        <span class="c-attr">"avatar avatar-md"</span> alt = "..." &gt;
+                        <br>
+                        &lt;<span class="c-div">span</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"badge-status badge-status-md"</span> &gt;
+                        +7 &lt;<span class="c-div">/span</span>&gt;
+                        <br> &lt;<span class="c-div">/span</span>&gt;
+
+                        <!-- badges on large avatar -->
+                        <p> &lt;-- Badge on large-sized avatar --&gt;</p>
+                        &lt;<span class="c-div">span</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"badge badge-span"</span> &gt;
+                        <br> &lt;<span class="c-div">img</span> src = <span class="c-attr">"img.png"</span> <span
+                            class="c-class">class</span> =
+                        <span class="c-attr">"avatar avatar-lg"</span> alt = "..." &gt;
+                        <br>
+                        &lt;<span class="c-div">span</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"badge-status badge-status-lg"</span> &gt;
+                        +7 &lt;<span class="c-div">/span</span>&gt;
+                        <br> &lt;<span class="c-div">/span</span>&gt;
+
+                    </code>
+                </div>
+
+                <!-- badges over icons -->
+                <h3>Badges over Icons</h3>
+                <p>You can use <span class="highlight">badge-right | badge-left</span> on child element to place it on
+                    top of an icon.</p>
+                <div class="badge-container">
+                    <span class="badge badge-span">
+                        <i class="fa fa-cart-plus fa-2x"></i><span class="badge-circle badge-right">+2</span>
+                    </span>
+                    <span class="badge badge-span">
+                        <i class="fa fa-wechat fa-2x"></i><span class="badge-circle badge-right">+3</span>
+                    </span>
+                </div>
+                <div class="container container-highlight container-code">
+                    <code>
+                        &lt;<span class="c-div">span</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"badge badge-span"</span> &gt;
+                        <br> &lt;<span class="c-div">img</span> src = <span class="c-attr">"img.png"</span> <span
+                            class="c-class">class</span> =
+                        <span class="c-attr">"avatar avatar-sm"</span> alt = "..." &gt;
+                        <br>
+                        &lt;<span class="c-div">span</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"badge-circle badge-right"</span> &gt;
+                        +7 &lt;<span class="c-div">/span</span>&gt;
+                        <br> &lt;<span class="c-div">/span</span>&gt;
+                    </code>
+
+                </div>
+
+                <footer>
+                    <a class="btn highlight" href="/Components/Avatar/avatar.html"><< Avatar </a>          
+                    <a class="btn highlight" href="/Components/Button/button.html"> Button >> </a>  
+                </footer>
+    
+
+        </section>
+    </div>
+
 
 </body>
+
 </html>

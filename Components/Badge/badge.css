@@ -17,9 +17,48 @@
 
 .badge-status{
     position: absolute;
-    bottom: 13px;
-    right: 13px;
     border-radius: 50%;
     color: var(--SUCESS-COLOR);
+}
+
+.badge-status-lg{
+    bottom: 1.913rem;
+    right: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.badge-status-md{
+    bottom: 1.913rem;
+    right:0.2rem;
     font-size: 1rem;
+
+}
+
+.badge-status-sm{
+    bottom: 1.5rem;
+    right:0.2rem;
+    font-size: 0.8rem;
+}
+
+.badge-circle{
+    border-radius: 50%;
+    background-color: tomato;
+    padding: 1px;
+    margin-bottom: 1rem;
+}
+
+.badge-circle-yellow{
+    border-radius: 50%;
+    background-color: rgb(252, 255, 71);
+    padding: 1px;
+    margin-bottom: 1rem;
+}
+
+.badge-span{
+    padding: 1rem;
+}
+
+.badge-icon{
+    /* border: solid; */
+    padding: 0px 2px;
 }

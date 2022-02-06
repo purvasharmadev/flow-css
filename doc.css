@@ -169,6 +169,7 @@ main p{
     font-size: 1rem;
     font-weight: 400;
     overflow: auto;
+    text-align: justify;
 }
 
 
@@ -182,6 +183,21 @@ main p{
 .c-attr{
     color: var(--WARNING-COLOR);
 
+}
+
+/* Badge */
+.badge-container{
+    display: flex;
+    height: auto;
+    width: 25%;
+    justify-content:space-between;
+    /* flex-direction: row; */
+}
+
+.link{
+    text-decoration: none;
+    color: var(--SECONDARY-COLOR);
+    font-weight: bold;
 }
 
 .btn-to-top{
