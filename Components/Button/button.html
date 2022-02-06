@@ -1,38 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/component.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Button</title>
 </head>
+
 <body>
-    
-    <!-- Buttons -->
-    <h1>Buttons</h1>
-    <button class="btn">Default Button</button>
-    <button class="btn btn-primary">Primary Button</button>
-    <button class="btn btn-secondary">Secondary button</button>
-    <button class="btn btn-primary-outline">Primary Outline</button>
-    <button class="btn btn-secondary-outline">Secondary Outline</button>
-    <button class="btn btn-primary" ><a class="btn-link" href="#">link</a></button>
+    <nav >
+        <h2 class="nav-brand"><a href="/index.html" class="nav-link link">GlowCss</a></h2>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="/index.html" class="nav-link link">Getting Started</a></li>
+            <li class="nav-item"><a href="/doc.html" class="active nav-link link">Documentation</a></li>
+            <li class="nav-item"><a href="/" class="nav-link link">Github</a></li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <!-- COLUMN-1 -->
+        <section class="col-1 sidebar">
+            <h4>Quick Start</h4>
+            <a class="btn btn-link" href="/doc.html">Installation</a>
 
-    <!-- Buttons with icons -->
-    <h1>Icon Button</h1>
-    <button class="btn  btn-icon"><i class="fa fas fa-home"></i></button>
-    <button class="btn btn-icon"><i class="fa fa-bars"></i></button>
-    <button class="btn btn-icon"><i class="fa fa-home"></i> Home</button>
-    <button class="btn btn-icon"><i class="fa fa-bars"></i> Menu</button>
+            <h4>Components</h4>
+            <a class="btn btn-link " href="/Components/Alert/alert.html">Alerts</a>
+            <a class="btn btn-link" href="/Components/Avatar/avatar.html">Avatar</a>
+            <a class="btn btn-link" href="/Components/Badge/badge.html">Badge</a>
+            <a href="/Components/Button/button.html" class="btn btn-link active">Button</a>
+            <a class="btn btn-link" href="/Components/Cards/card.html">Cards</a>
+            <a class="btn btn-link" href="/Components/Image/image.html">Image</a>
+            <a class="btn btn-link" href="/Components/Input/input.html">Input</a>
+        </section>
 
-    <!-- Float Buttons -->
-    <h1>Float Button</h1>
-    <button class="btn-float"><i class="fa fa-arrow-circle-o-up btn-float"></i></button>
-    <button class="btn-float"><i class="fa fa-plus-circle btn-float"></i></button>
+        <!--COLUMN-2  -->
+        <section class="col-2 section-doc" id="top">
+            <h2>Button</h2>
+            <p>Buttons allow user to take action or interact with a webpage. GlowCss offers wide range of buttons to
+                suit your design. </p>
+            <hr>
+            <div class="container">
+                <h3>Deault Button</h3>
+                <p>Create a button with default styling using <span class="highlight">btn</span> class.</p>
+                <button class="btn">Default Button</button>
+                <div class="container container-code container-highlight">
+                    <code>
+                        &lt;<span class="c-div">button</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"btn"</span>&gt;
+                        Default Button &lt;/button&gt;
+                    </code>
+                </div>
+                <h3>Solid Button</h3>
+                <p>Create a solid button with <span class="highlight">btn-primary | btn-secondary</span> class.</p>
+                <button class="btn btn-primary">Primary Button</button>
+                <button class="btn btn-secondary">Secondary Button</button>
+
+                <div class="container container-code container-highlight">
+                    <code>
+
+                        <p>&lt;-- btn-primary --&gt;</p>
+                        &lt;<span class="c-div">button</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"btn btn-primary"</span>&gt;
+                        Primary Button &lt;/button&gt;
+
+                        <p>&lt;-- btn-secondary --&gt;</p>
+                        &lt;<span class="c-div">button</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"btn btn-secondary"</span>&gt;
+                        Secondary Button &lt;/button&gt;
+
+
+                    </code>
+                </div>
+
+                <h3>Outline Button</h3>
+                <p>Create a outline button with <span class="highlight">btn-primary-outline |
+                        btn-secondary-outline</span> class.</p>
+                <button class="btn btn-primary-outline">Primary Button</button>
+                <button class="btn btn-secondary-outline">Secondary Button</button>
+
+                <div class="container container-code container-highlight">
+                    <code>
+
+                        <p>&lt;-- btn-primary-outline --&gt;</p>
+                        &lt;<span class="c-div">button</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"btn btn-primary-outline"</span>&gt;
+                        Primary Button &lt;/button&gt;
+
+                        <p>&lt;-- btn-secondary-outline --&gt;</p>
+                        &lt;<span class="c-div">button</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"btn btn-secondary-outline"</span>&gt;
+                        Secondary Button &lt;/button&gt;
+
+
+                    </code>
+                </div>
+
+                <!-- Link -->
+                <h3>Link</h3>
+                <p>Create a link button with <span class="highlight">link</span> class.</p>
+                <a class="link" href="#">link</a>
+                <div class="container container-code container-highlight">
+                    <code>
+
+                        <p>&lt;-- link --&gt;</p>
+                        &lt;<span class="c-div">a</span> <span class="c-class">href</span> = <span
+                            class="c-attr">"#"</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"link"</span>&gt;
+                        link &lt;/a&gt;
+                    </code>
+                </div>
+
+                <!-- Button with Icon -->
+                <h3>Icon Button</h3>
+                <p>Create a Icon button with <span class="highlight">btn-icon</span> class.</p>
+                <button class="btn  btn-icon"><i class="fa fas fa-home"></i></button>
+                <button class="btn btn-icon"><i class="fa fa-bars"></i></button>
+                <button class="btn btn-icon"><i class="fa fa-home"></i> Home</button>
+                <button class="btn btn-icon"><i class="fa fa-bars"></i> Menu</button>
+                <div class="container container-code container-highlight">
+                    <code>
+
+                        <p>&lt;-- btn-icon --&gt;</p>
+                        &lt;<span class="c-div">button</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"btn btn-icon"</span>&gt;
+                            &lt;<span class="c-div">svg</span>&gt;
+                            &lt;<span class="c-div">/svg</span>&gt;
+                        &lt;<span class="c-div">/button</span>&gt;
+
+                        <p>&lt;-- btn-icon with text --&gt;</p>
+                        &lt;<span class="c-div">button</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"btn btn-icon"</span>&gt;
+                            &lt;<span class="c-div">svg</span>&gt;
+                            &lt;<span class="c-div">/svg</span>&gt; Home
+                        &lt;<span class="c-div">/button</span>&gt;
+
+                    </code>
+                </div>
+
+                <!-- Float Buttons -->
+                <h3>Float Button</h3>
+                <p>Create a Float button with <span class="highlight">btn-float</span> class.</p>
+                <button class="btn-float"><i class="fa fa-arrow-up"></i></button>
+                <button class="btn-float"><i class="fa fa-plus"></i></button>
+                                <div class="container container-code container-highlight">
+                    <code>
+                        <p>&lt;-- btn-icon --&gt;</p>
+                        &lt;<span class="c-div">button</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"btn-float"</span>&gt;
+                            &lt;<span class="c-div">svg</span>&gt;
+                            &lt;<span class="c-div">/svg</span>&gt;
+                        &lt;<span class="c-div">/button</span>&gt;
+
+
+
+                    </code>
+                </div>
+
+
+
+
+            </div>
+
+            <footer>
+                <a class="btn highlight" href="/Components/Badge/badge.html"><< Badge </a>          
+                <a class="btn highlight" href="/Components/Cards/card.html">Card >> </a>  
+            </footer>
+            <a href="#top" class="btn-to-top btn-float"><i class="fa fa-arrow-circle-o-up btn-float"></i></a>
+
+
+        </section>
 
 </body>
+
 </html>

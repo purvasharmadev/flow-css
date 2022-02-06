@@ -21,9 +21,13 @@
 
 
 /* Link */
-.btn-link{
+.link{
     text-decoration: none;
-    color: var(--TEXT-COLOR);
+    /* color: var(--PRIMARY-COLOR); */
+    font-weight: bold;
+}
+.link:hover{
+    border-bottom: 2px solid var(--PRIMARY-COLOR);
 }
 
 .active{
