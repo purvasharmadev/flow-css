@@ -19,6 +19,20 @@
     color: var(--TEXT-COLOR);
 }
 
+.btn-danger{
+    background-color: var(--DANGER-COLOR);
+    color: var(--TEXT-COLOR);
+}
+.btn-info{
+    background-color: var(--INFO-COLOR);
+    color: var(--TEXT-COLOR);
+}
+.btn-warning{
+    background-color: var(--WARNING-COLOR);
+    color: var(--TEXT-COLOR);
+}
+
+
 
 /* Link */
 .link{
@@ -69,11 +83,22 @@
 
 /* Hover Classes */
 .btn-primary:hover{
-    background-color: #490c83;
+    background-color:#490c83 ;
 }
 
 .btn-secondary:hover{
-    background-color: #a45bf1e0;
+    background-color:#490c83 ;
+}
+.btn-danger:hover{
+    background-color: #490c83;
+
+}
+.btn-info:hover{
+    background-color: #490c83;
+
+}
+.btn-warning:hover{
+    background-color: #490c83;
 }
 .btn-primary-outline:hover{
     background-color: var(--PRIMARY-COLOR);

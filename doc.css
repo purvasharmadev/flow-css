@@ -113,12 +113,12 @@ main p{
     color: var(--SECONDARY-COLOR);
 }
 
-.sidebar .btn-link{
+.sidebar .link{
     color: var(--PRIMARY-COLOR);
     margin: 0rem 1rem;
 }
 
-.sidebar .btn-link:hover{
+.sidebar .link:hover{
     border:2px solid;
 }
 
@@ -159,13 +159,14 @@ main p{
     margin: 0 1.5px;
 }
 
+/* Code Documentation */
 .col-2 .container-highlight{
     border: solid;
     margin:2rem auto;
     background-color: var(--BACKGROUND-COLOR);
     color: var(--PRIMARY-COLOR);
     text-align: center;
-    padding: 2rem;   
+    padding:2rem;   
 }
 
 .col-2 .container-code{
@@ -177,7 +178,7 @@ main p{
     text-align: justify;
 }
 
-
+/* Code snippet */
 .c-div{
     color: var(--DANGER-COLOR);
 }
@@ -194,13 +195,15 @@ main p{
     /* font-size: 5px; */
 }
 
+
+/* Component Holder */
+
 /* Badge */
 .badge-container{
     display: flex;
     height: auto;
     width: 25%;
     justify-content:space-between;
-    /* flex-direction: row; */
 }
 
 
