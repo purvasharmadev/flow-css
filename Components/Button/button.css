@@ -67,8 +67,8 @@
 /* Icon */
 .btn-icon{
     font-size: 1rem;
-    padding: 0.5rem 1.5rem;
-    color: var(--PRIMARY-COLOR);
+    padding:1rem 1.5rem;
+    /* border:2px solid yellow; */
 }
 
 /* Float */

@@ -43,8 +43,6 @@ body{
 .flex-container{
     display: flex;
     justify-content: space-evenly;
-    flex-direction: column;
-
+    flex-wrap: wrap;
+    /* flex-direction: column; */
 }
-
-.

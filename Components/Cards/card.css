@@ -1,16 +1,18 @@
 .card{
+    /* margin: 1rem; */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 5px;
     background-color: var(--BACKGROUND-COLOR);
     font-family: var(--MAIN-FONT);
     overflow: hidden; 
-    width:20rem;
-    max-width:55rem;
+    height: max-content;
+    width:18.75rem;
+    text-align: justify;
 }
 
 .card-header{
-    margin: 0;
-    text-align: center;
+    /* margin: 1rem; */
+    padding:1rem 1rem;
 }
 
 .card-header img{
@@ -21,7 +23,6 @@
 .card-body{
     margin: 0;
     padding: 0.5rem 1rem;
-    text-align: center;
 }
 
 .card-body .card-heading{
@@ -45,13 +46,25 @@
 
 /* Card Badge */
 .card-badge{
-    color: var(--SECONDARY-COLOR);
-    cursor: pointer;
+    background-color: none;
     float: right;
+    /* margin-top: 1rem; */
     font-size: 2rem;
-    font-weight: bold;
-    padding: 0.2rem 0.2rem;
+
+}
+.ecom-badge{
+    background-color:var(--PRIMARY-COLOR);
+    color: var(--TEXT-COLOR);
+    border:1px solid;
+    cursor: pointer;
+    float: left;
+    font-size: 1rem;
+    /* font-weight: bold; */
+    padding:0.2rem 1rem;
     text-align: center;
+    /* margin-top: 2rem; */
+    margin-bottom: 1rem;
+    margin-left:-1rem;
 }
 
 .card-badge::after{
@@ -81,38 +94,46 @@
 
 
 /* Horizontal Card */
-.card-flex{
+  .flex-card {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-flex .card-header{
+    justify-content: space-between;
     flex-basis: 50%;
-}
-
-.card-flex .card-body{
-    flex-basis: 50%;
-}
-
-
-.card-flex .btn{
-    padding: 0.3rem;
+    border-radius: 10px;
+  }
+  .column {
+    flex-basis: 100%;
+    padding: 1rem;
+  }
+  .column img {
+    border-radius: 10px;
+  }
+  .column h3 {
+    letter-spacing: 2px;
+  }
+  .column p {
+    text-align: justify;
+    text-transform: capitalize;
+  }
+  
+.flex-card .btn{
+    padding:9px;
 }
 
 /* Card With Overlay */
 .card-overlay{
     position: relative;
+    box-sizing: border-box;
 }
 
 .card-overlay .card-body{
-    /* border: solid; */
     background-color: var(--SECONDARY-COLOR);
     opacity: 0.9;
     position: absolute;
-    height: 100%;
-    width: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
     bottom: 0px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,10 +141,9 @@
 
 .card-overlay .card-text{
     color: black;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bolder;
-    /* border: solid; */
-    margin: -1rem;
+    /* margin: -1rem; */
 
 }
 
@@ -135,4 +155,13 @@
 
 .card-badge:hover{
     color: red;
+}
+
+@media (max-width:600px){
+    .flex-card{
+        flex-basis: 100%;
+    }
+    .flex-card .btn{
+        padding: 8px ;
+    }
 }

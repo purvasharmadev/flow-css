@@ -24,7 +24,6 @@ nav{
     display:flex;
     justify-content:center;
     align-items: center;
-    /* border: solid; */
     height: 4rem;
     flex-wrap: wrap;
 }
@@ -204,6 +203,11 @@ main p{
     height: auto;
     width: 25%;
     justify-content:space-between;
+}
+.c-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 

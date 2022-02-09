@@ -1,149 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/component.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
-    <title>Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <title>Glow | Card</title>
 </head>
 <div>
-    <h1>Cards</h1>
-    <div class="container flex-container">
-        <!-- Only Text card -->
-          <h3>Card with Text</h3>
-                <div class="card">
-                     <div class="card-body">
-                        <h3 class="card-heading">Card</h3>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi voluptatibus inventore illum maiores dolorum, sunt quis tenetur quae nulla voluptas?
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, magnam.</p>
-                      </div>
-                 </div>
-                           
-        <!-- Simple Card -->
-        <h3>Simple card</h3>
-        <div class="card">
-            <div class="card-header">
-                <img src="/Assets/developer.png" alt="developer" srcset="">
-            </div>
-            <div class="card-body">
-                <h3 class="card-heading">Card</h3>
-                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, magnam.</p>
-                <div class="card-footer">
-                    <button class="btn btn-primary">Primary</button>
-                    <button class="btn btn-secondary">Secondary</button>
-                </div>
-            </div>
-        </div>
 
-        <!-- Simple card with badge -->
-        <h3>Simple Card with Badge</h3>
-        <div class="card">
-            
-            <div class="card-header">
-                <span class="card-badge"><i class="fa fas fa-heart"></i></span>
-                <img src="/Assets/developer.png" alt="developer" srcset="">
-            </div>
-            <div class="card-body">
-                <h3 class="card-heading">Card</h3>
-                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, magnam.</p>
-                <div class="card-footer">
-                    <button class="btn btn-primary">Primary</button>
-                    <button class="btn btn-secondary">Secondary</button>
-                </div>
-            </div>
-        </div>
+    <nav>
+        <h2 class="nav-brand"><a href="/index.html" class="nav-link nav-link link">GlowCss</a></h2>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="/index.html" class="nav-link nav-link link">Getting Started</a></li>
+            <li class="nav-item"><a href="/doc.html" class="active nav-link nav-link link">Documentation</a></li>
+            <li class="nav-item"><a href="https://github.com/purvasharmadev/glow-css" class="nav-link nav-link link">Github</a></li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <!-- COLUMN-1 -->
+        <section class="col-1 sidebar">
+            <h4>Quick Start</h4>
+            <a class="btn nav-link link" href="/doc.html">Installation</a>
 
-        <!-- Simple Card with Dismiss -->
-        <h3>Simple Card with Dismiss</h3>
-        <div class="card">
-            <div class="card-header">
-                <span class="card-badge">&times;</span>
+            <h4>Components</h4>
+            <a class="btn nav-link link " href="/Components/Alert/alert.html">Alerts</a>
+            <a class="btn nav-link link" href="/Components/Avatar/avatar.html">Avatar</a>
+            <a class="btn nav-link link" href="/Components/Badge/badge.html">Badge</a>
+            <a href="/Components/Button/button.html" class="btn nav-link link">Button</a>
+            <a class="btn nav-link link active" href="/Components/Cards/card.html">Cards</a>
+            <a class="btn nav-link link" href="/Components/Image/image.html">Image</a>
+            <a class="btn nav-link link" href="/Components/Input/input.html">Input</a>
+        </section>
 
-                <img src="/Assets/developer.png" alt="developer" srcset="">
-            </div>
-            <div class="card-body">
-                <h3 class="card-heading">Card</h3>
-                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, magnam.</p>
-                <div class="card-footer">
-                    <button class="btn btn-primary">Primary</button>
-                    <button class="btn btn-secondary">Secondary</button>
-                </div>
-            </div>
-        </div>
+        <!--COLUMN-2  -->
+        <section class="col-2 section-doc">
+            <h2>Card</h2>
+            <p>Cards are flexible and extensible content container, that are used to draw user's attention towards the
+                content.
+                CSS cards are great for organizing and enhancing a website's user interface. Each card is uniquely
+                designed to make it easy for users to read the card content.
+                Card component consist of <span class="highlight">card | card-header | card-body | card-footer</span> as
+                main classes which can be used to create custom styles.
+            </p>
+            <hr>
+            <div class="container">
+                <!-- Only Text card -->
+                <h3>Card with Text</h3>
+                <p>Create a Simple Card with Text using above mentioned classes </p>
+                <div class="flex-container">
 
-
-        <!-- Product card -->
-        <h3>Ecommerce card</h3>
-        <div class="card ecom-card">
-            <div class="card-header">
-                <img src="/Assets/developer.png" alt="developer" srcset="">
-            </div>
-            <div class="card-body">
-                <h3 class="card-heading">Product Name</h3>
-                <p class="card-text">Rs. 1999 only. <span class="ecom-card-price">Rs. 2999</span> </p>
-            </div>
-            <div class="card-footer">
-                <button class="btn btn-primary">Primary</button>
-                <button class="btn btn-secondary">Secondary</button>
-            </div>
-        </div>
-
-                <!-- E-com card with badge-->
-                <h3>Ecommerce card with badge</h3>
-                <div class="card ecom-card">
-                    <div class="card-header">
-                        <span class="card-badge"><i class="fa fas fa-heart"></i></span>
-                        <img src="/Assets/developer.png" alt="developer" srcset="">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-heading">Product Name</h3>
-                        <p class="card-text">Rs. 1999 only. <span class="ecom-card-price">Rs. 2999</span> </p>
-                            </div>
-                    <div class="card-footer">
-                        <button class="btn btn-primary">Primary</button>
-                        <button class="btn btn-secondary">Secondary</button>
-                    </div>
-                </div>
-
-                <!-- Horizontal card -->
-                <h3>Horizontal card</h3>
-
-                <div class="card">
-                    <div class="card-flex">
+                    <div class="card">
                         <div class="card-header">
+                            <h3>Card-Title</h3>
+                        </div>
+
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
+                                voluptatibus
+                                inventore illum maiores dolorum, sunt quis tenetur quae nulla voluptas?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container container-highlight container-code">
+                    <code>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class </span> = <span
+                            class="c-attr">"card"</span>&gt; <br>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class </span> = <span
+                            class="c-attr">"card-header"</span>&gt;
+                        &lt;<span class="c-div">h3</span>&gt; Card-title &lt;<span class="c-div">/h3</span>&gt;
+                        &lt;<span class="c-div">/div</span>&gt;<br>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class </span> = <span
+                            class="c-attr">"card-body"</span>&gt;
+                        <br> &lt;<span class="c-div">p</span>&gt; Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Facilis, inventore.&lt;<span class="c-div">/p</span>&gt;<br>
+                        &lt;<span class="c-div">/div</span>&gt;
+                        &lt;<span class="c-div">/div</span>&gt;
+                    </code>
+                </div>
+
+                <!-- Simple Card with image -->
+                <h3>Card with Image</h3>
+                <div class="flex-container">
+                    <!-- Simple Card -->
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="/Assets/demo-pic.jpg" alt="developer" srcset="">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-heading">Card</h3>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio,
+                                magnam.</p>
+                            <div class="card-footer">
+                                <button class="btn btn-primary">Primary</button>
+                                <button class="btn btn-secondary">Secondary</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="container container-highlight container-code">
+                    <code>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class </span> = <span
+                            class="c-attr">"card"</span>&gt; <br>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class </span> = <span
+                            class="c-attr">"card-header"</span>&gt;
+                        &lt;<span class="c-div">img</span> src ="/..." <span class="c-div">/</span>&gt;
+                        &lt;<span class="c-div">/div</span>&gt;<br>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class </span> = <span
+                            class="c-attr">"card-body"</span>&gt;
+                        <br> &lt;<span class="c-div">p</span>&gt; Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Facilis, inventore.&lt;<span class="c-div">/p</span>&gt;
+                        &lt;<span class="c-div">div</span> class = <span class="c-class">"card-footer"</span>&gt;
+                        <br> &lt;<span class="c-div">button</span> <span class="c-class">class</span>= <span
+                            class="c-attr">"btn btn-primary"</span> &gt;Button &lt;<span
+                            class="c-div">/button</span>&gt;
+                        <br> &lt;<span class="c-div">button</span> <span class="c-class">class</span>= <span
+                            class="c-attr">"btn btn-secondary"</span> &gt;Button &lt;<span
+                            class="c-div">/button</span>&gt;
+                        <br>&lt;<span class="c-div">/div</span>&gt;
+
+                        &lt;<span class="c-div">/div</span>&gt;
+                        &lt;<span class="c-div">/div</span>&gt;
+                    </code>
+                </div>
+
+                <h3>Card with Badge and Dismiss</h3>
+                <div class="flex-container">
+                    <!-- Card with badge -->
+                    <div class="card">
+
+                        <div class="card-header">
+                            <span class="card-badge"><i class="fa fa-heart"></i></span>
                             <img src="/Assets/developer.png" alt="developer" srcset="">
-                         </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-heading">Card</h3>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio,
+                                magnam.</p>
+                            <div class="card-footer">
+                                <button class="btn btn-primary">Primary</button>
+                                <button class="btn btn-secondary">Secondary</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card with dismiss  -->
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-badge">&times;</span>
+
+                            <img src="/Assets/developer.png" alt="developer" srcset="">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-heading">Card</h3>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio,
+                                magnam.</p>
+                            <div class="card-footer">
+                                <button class="btn btn-primary">Primary</button>
+                                <button class="btn btn-secondary">Secondary</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container container-highlight container-code">
+                    <code>
+                        <p>&lt; -- Card With Badge -- &gt;</p>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class </span> = <span
+                            class="c-attr">"card"</span>&gt; <br>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class </span> = <span
+                            class="c-attr">"card-header"</span>&gt;
+                        &lt;<span class="c-div">span</span> <span class="c-class">class</span> = <span
+                            class="c-attr">card-badge</span>&gt; ❤ &lt;<span class="c-div">/span</span>&gt;
+                        &lt;<span class="c-div">img</span> src ="/..." <span class="c-div">/</span>&gt;
+                        &lt;<span class="c-div">/div</span>&gt;<br>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class </span> = <span
+                            class="c-attr">"card-body"</span>&gt;
+                        <br>
+                        &lt;<span class="c-div">h3</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"card-heading"</span>&gt; Card Title &lt;<span class="c-div">/h3</span>&gt;
+                        <br> &lt;<span class="c-div">p</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"card-text"</span>&gt; Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Facilis, inventore.&lt;<span class="c-div">/p</span>&gt;
+                        <br>
+                        &lt;<span class="c-div">div</span> class = <span class="c-class">"card-footer"</span>&gt;
+                        <br> &lt;<span class="c-div">button</span> <span class="c-class">class</span>= <span
+                            class="c-attr">"btn btn-primary"</span> &gt;Button &lt;<span
+                            class="c-div">/button</span>&gt;
+                        <br> &lt;<span class="c-div">button</span> <span class="c-class">class</span>= <span
+                            class="c-attr">"btn btn-secondary"</span> &gt;Button &lt;<span
+                            class="c-div">/button</span>&gt;
+                        <br>&lt;<span class="c-div">/div</span>&gt;
+                        &lt;<span class="c-div">/div</span>&gt;
+                        &lt;<span class="c-div">/div</span>&gt;
+
+
+                        <p>&lt; -- Card With Dismiss -- &gt;</p>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class </span> = <span
+                            class="c-attr">"card"</span>&gt; <br>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class </span> = <span
+                            class="c-attr">"card-header"</span>&gt;
+                        &lt;<span class="c-div">span</span> <span class="c-class">class</span> = <span
+                            class="c-attr">card-badge</span>&gt; &times; &lt;<span class="c-div">/span</span>&gt;
+                        &lt;<span class="c-div">img</span> src ="/..." <span class="c-div">/</span>&gt;
+                        &lt;<span class="c-div">/div</span>&gt;<br>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class </span> = <span
+                            class="c-attr">"card-body"</span>&gt;
+                        <br>
+                        &lt;<span class="c-div">h3</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"card-heading"</span>&gt; Card Title &lt;<span class="c-div">/h3</span>&gt;
+                        <br> &lt;<span class="c-div">p</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"card-text"</span>&gt; Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Facilis, inventore.&lt;<span class="c-div">/p</span>&gt;
+                        <br>
+                        &lt;<span class="c-div">div</span> class = <span class="c-class">"card-footer"</span>&gt;
+                        <br> &lt;<span class="c-div">button</span> <span class="c-class">class</span>= <span
+                            class="c-attr">"btn btn-primary"</span> &gt;Button &lt;<span
+                            class="c-div">/button</span>&gt;
+                        <br> &lt;<span class="c-div">button</span> <span class="c-class">class</span>= <span
+                            class="c-attr">"btn btn-secondary"</span> &gt;Button &lt;<span
+                            class="c-div">/button</span>&gt;
+                        <br>&lt;<span class="c-div">/div</span>&gt;
+                        &lt;<span class="c-div">/div</span>&gt;
+                        &lt;<span class="c-div">/div</span>&gt;
+                    </code>
+                </div>
+
+                <h3>E-commerce cards</h3>
+                <div class="flex-container">
+                    <div class="card ecom-card">
+                        <div class="card-header">
+                            <img src="/Assets/hope-pot.webp" alt="developer" srcset="">
+                        </div>
                         <div class="card-body">
                             <h3 class="card-heading">Product Name</h3>
                             <p class="card-text">Rs. 1999 only. <span class="ecom-card-price">Rs. 2999</span> </p>
-            
+                        </div>
                         <div class="card-footer">
                             <button class="btn btn-primary">Primary</button>
                             <button class="btn btn-secondary">Secondary</button>
                         </div>
-    
-                     </div>
+                    </div>
+
+                    <!-- E-com card with badge-->
+                    <div class="card ecom-card">
+                        <div class="card-header">
+                            <span class="card-badge"><i class="fa fa-heart"></i></span>
+                            <span class="ecom-badge">New Arrival</span>
+                            <img src="/Assets/hope-pot.webp" alt="developer" srcset="">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-heading">Hope Pot Set</h3>
+                            <p class="card-text">Rs. 1999 only. <span class="ecom-card-price">Rs. 2999</span> </p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary btn-icon"><i class="fa fa-cart-plus"></i> Add to
+                                Cart</button>
+                        </div>
                     </div>
                 </div>
-                
-            <!-- Card with text overlay -->
-            <h3>Card with text overlay</h3>
-            <div class="card">
-                <div class="card-header card-overlay">
-                    <img src="/Assets/developer.png" alt="developer" srcset="">
-                    <div class="card-body">
-                        <h3 class="card-heading">Card-Title</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, alias!</p>
-                    </div>
+
+                <div class="container container-highlight container-code">
+                    <code>
+                        <p>&lt; -- simple e-com card --&gt;</p>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class </span> = <span
+                            class="c-attr">"card ecom-card"</span>&gt; <br>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class </span> = <span
+                            class="c-attr">"card-header"</span>&gt;
+                        &lt;<span class="c-div">img</span> src ="/..." <span class="c-div">/</span>&gt;
+                        &lt;<span class="c-div">/div</span>&gt;<br>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class </span> = <span
+                            class="c-attr">"card-body"</span>&gt;
+                        &lt;<span class="c-div">h3</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"card-heading"</span>&gt; Product Name &lt;<span class="c-div">/h3</span>&gt;
+                        <br> &lt;<span class="c-div">p</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"card-text"</span>&gt; Rs. 1999 only. &lt;<span class="c-div">span</span>
+                        <span class="c-class">class</span> = <span class="c-attr">"ecom-card-price"</span>&gt;Rs.2999
+                        &lt;<span class="c-div">/span</span>&gt;
+                        &lt;<span class="c-div">/p</span>&gt;<br>
+
+                        &lt;<span class="c-div">div</span> class = <span class="c-class">"card-footer"</span>&gt;
+                        <br> &lt;<span class="c-div">button</span> <span class="c-class">class</span>= <span
+                            class="c-attr">"btn btn-primary"</span> &gt;Button &lt;<span
+                            class="c-div">/button</span>&gt;
+                        <br> &lt;<span class="c-div">button</span> <span class="c-class">class</span>= <span
+                            class="c-attr">"btn btn-secondary"</span> &gt;Button &lt;<span
+                            class="c-div">/button</span>&gt;
+                        <br>&lt;<span class="c-div">/div</span>&gt;
+
+                        &lt;<span class="c-div">/div</span>&gt;
+
+                        <p>&lt; -- e-com card with badge --&gt;</p>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class </span> = <span
+                            class="c-attr">"card ecom-card"</span>&gt; <br>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class </span> = <span
+                            class="c-attr">"card-header"</span>&gt; <br>
+                        &lt;<span class="c-div">span</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"card-badge"</span>&gt;
+                        ❤ &lt;<span class="c-div">/span</span>&gt; <br>
+                        &lt;<span class="c-div">span</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"ecom-badge"</span>&gt;
+                        New Arrival &lt;<span class="c-div">/span</span>&gt; <br>
+                        &lt;<span class="c-div">img</span> src ="/..." <span class="c-div">/</span>&gt;
+                        &lt;<span class="c-div">/div</span>&gt;<br>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class </span> = <span
+                            class="c-attr">"card-body"</span>&gt;
+                        &lt;<span class="c-div">h3</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"card-heading"</span>&gt; Product Name &lt;<span class="c-div">/h3</span>&gt;
+                        <br> &lt;<span class="c-div">p</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"card-text"</span>&gt; Rs. 1999 only. &lt;<span class="c-div">span</span>
+                        <span class="c-class">class</span> = <span class="c-attr">"ecom-card-price"</span>&gt;Rs.2999
+                        &lt;<span class="c-div">/span</span>&gt;
+                        &lt;<span class="c-div">/p</span>&gt;<br>
+
+                        &lt;<span class="c-div">div</span> class = <span class="c-class">"card-footer"</span>&gt;
+                        <br> &lt;<span class="c-div">button</span> <span class="c-class">class</span>= <span
+                            class="c-attr">"btn btn-primary btn-icon"</span> &gt; &lt;<span class="c-div">svg</span>&gt;
+                        &lt;<span class="c-div">/svg</span>&gt; Add To Cart &lt;<span class="c-div">/button</span>&gt;
+                        <br>&lt;<span class="c-div">/div</span>&gt;
+
+                        &lt;<span class="c-div">/div</span>&gt;
+                    </code>
                 </div>
-            </div>                
+
+                <h3>Horizontal card</h3>
+
+                <!-- Horizontal card -->
+                <div class="flex-container">
+                    <div class="card flex-card">
+                        <div class="column">
+                            <img src="/Assets/hope-pot.webp" class="img-responsive" alt="" srcset="">
+                        </div>
+                        <div class="column">
+                            <h3 class="card-heading">Hope Pot Set</h3>
+                            <p class="card-text">Rs. 1999 only. <span class="ecom-card-price">Rs. 2999</span> </p>
+                            <button class="btn btn-primary btn-icon"><i class="fa fa-cart-plus"></i> Add To
+                                Cart</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="container container-highlight container-code">
+                    <code>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"card flex-card"</span>&gt;
+                        <br> &lt;<span class="c-div">div</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"column"</span>&gt;<br>
+                        &lt;<span class="c-div">img</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"img-responsive"</span> src = "/..." <span class="c-div">/</span>&gt; <br>
+                        &lt;<span class="c-div">/div</span>&gt; <br>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"column"</span>&gt; <br>
+                        &lt;<span class="c-div">h3</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"card-heading"</span>&gt;Hope Pot Set &lt;<span
+                            class="c-div">/h3</span>&gt;<br>
+                        &lt;<span class="c-div">p</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"card-text"</span>&gt; Rs. 1999 only. &lt;<span class="c-div">span</span>
+                        <span class="c-class">class</span> = <span class="c-attr">"ecom-card-price"</span>&gt;Rs.2999
+                        &lt;<span class="c-div">/span</span>&gt;
+                        &lt;<span class="c-div">/p</span>&gt;<br>
+                        &lt;<span class="c-div">button</span> <span class="c-class">class</span>= <span
+                        class="c-attr">"btn btn-primary btn-icon"</span> &gt; &lt;<span class="c-div">svg</span>&gt;
+                    &lt;<span class="c-div">/svg</span>&gt; Add To Cart &lt;<span class="c-div">/button</span>&gt;
+
+                        &lt;<span class="c-div">/div</span>&gt;<br>
+                        &lt;<span class="c-div">/div</span>&gt;<br>
+                    </code>
+                </div>
+
+                <h3>Card with text overlay</h3>
+                <div class="flex-container">
+                    <!-- Card with text overlay -->
+                    <div class="card">
+                        <div class="card-header card-overlay">
+                            <img src="/Assets/hope-pot.webp" alt="developer" srcset="">
+                            <h3 class="card-heading">Hope Pot Set</h3>
+                            <p>Rs. 1999 only. <span class="ecom-card-price">Rs. 2999</span> </p>
+
+                            <div class="card-body">
+                                <h3 class="card-text">Out Of Stocks</h3>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="container container-highlight container-code">
+                    <code>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class </span> = <span
+                        class="c-attr">"card"</span>&gt; <br>
+                    &lt;<span class="c-div">div</span> <span class="c-class">class </span> = <span
+                        class="c-attr">"card-header card-overlay"</span>&gt; <br>
+                    &lt;<span class="c-div">img</span> src ="/..." <span class="c-div">/</span>&gt; <br>
+                    &lt;<span class="c-div">div</span> <span class="c-class">class </span> = <span
+                        class="c-attr">"card-body"</span>&gt;
+                    <br> &lt;<span class="c-div">h3</span>&gt; Out Of Stocks&lt;<span class="c-div">/h3</span>&gt;
+                    <br>
+                     &lt;<span class="c-div">/div</span>&gt;
+                     <br>
+                    &lt;<span class="c-div">/div</span>&gt;
+
+                    </code>
+                </div>
+
+
+            </div>
+
+            <footer>
+                <a class="btn highlight" href="/Components/Button/button.html">
+                    << Button </a> <a class="btn highlight" href="/Components/Image/image.html"> Image >>
+                </a>
+
+            </footer>
+            <a href="#top" class="btn-to-top btn-float"><i class="fa fa-arrow-circle-o-up btn-float"></i></a>
+
+    </div>
 </div>
- 
+
+
+
+
+</section>
+
+
+
 
 </body>
+
 </html>

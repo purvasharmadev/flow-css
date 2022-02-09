@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/component.css">
-    <title>Avatar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Glow | Avatar</title>
 </head>
+
 <body>
     <nav>
-        <h2 class="nav-brand"><a href="/index.html" class="nav-link btn-link">GlowCss</a></h2>
+        <h2 class="nav-brand"><a href="/index.html" class="nav-link nav-link link">GlowCss</a></h2>
         <ul class="nav-list">
-            <li class="nav-item"><a href="/index.html" class="nav-link btn-link">Getting Started</a></li>
-            <li class="nav-item"><a href="/doc.html" class="active nav-link btn-link">Documentation</a></li>
-            <li class="nav-item"><a href="/" class="nav-link btn-link">Github</a></li>
+            <li class="nav-item"><a href="/index.html" class="nav-link nav-link link">Getting Started</a></li>
+            <li class="nav-item"><a href="/doc.html" class="active nav-link nav-link link">Documentation</a></li>
+            <li class="nav-item"><a href="https://github.com/purvasharmadev/glow-css" class="nav-link nav-link link">Github</a></li>
         </ul>
     </nav>
     <div class="main-container">
         <!-- COLUMN-1 -->
         <section class="col-1 sidebar">
             <h4>Quick Start</h4>
-            <a class="btn btn-link" href="/intro.html">Installation</a>
+            <a class="btn nav-link link" href="/intro.html">Installation</a>
 
             <h4>Components</h4>
-            <a class="btn btn-link " href="/Components/Alert/alert.html">Alerts</a>
-            <a class="btn btn-link active" href="/Components/Avatar/avatar.html">Avatar</a>
-            <a class="btn btn-link" href="/Components/Badge/badge.html">Badge</a>
-            <a href="/Components/Button/button.html" class="btn btn-link">Button</a>
-            <a class="btn btn-link" href="/Components/Cards/card.html">Cards</a>
-            <a class="btn btn-link" href="/Components/Image/image.html">Image</a>
-            <a class="btn btn-link" href="/Components/Input/input.html">Input</a>
+            <a class="btn nav-link link " href="/Components/Alert/alert.html">Alerts</a>
+            <a class="btn nav-link link active" href="/Components/Avatar/avatar.html">Avatar</a>
+            <a class="btn nav-link link" href="/Components/Badge/badge.html">Badge</a>
+            <a href="/Components/Button/button.html" class="btn nav-link link">Button</a>
+            <a class="btn nav-link link" href="/Components/Cards/card.html">Cards</a>
+            <a class="btn nav-link link" href="/Components/Image/image.html">Image</a>
+            <a class="btn nav-link link" href="/Components/Input/input.html">Input</a>
         </section>
 
         <!--COLUMN-2  -->
@@ -38,67 +41,81 @@
             <p>Avatar are used as user profile, they are usually circular in shape.
                 <span class="highlight">GlowCss</span> offers you two major types of avatar in different sizes.
             </p>
-        <hr>
-        <div class="container">
-            <h3>Circular Avatar</h3>
-            <p> <span class="highlight">avatar</span> use this class inside of an img tag to make it behave like an avatar. 
-                <br>
-                To get different sizes use: <span class="highlight">avatar-sm | avatar-md | avatar-lg </span>,  
-            </p>
-                <img src="/Assets/developer.png"  class="avatar avatar-sm" alt="developer.png" srcset="">
-                <img src="/Assets/developer.png"  class="avatar avatar-md" alt="developer.png" srcset="">
-                <img src="/Assets/developer.png"  class="avatar avatar-lg" alt="developer.png" srcset="">
-        </div>
-         <div class="container container-highlight container-code">
-           <code>  &lt;<span class="c-div">img</span> src = <span class="c-attr">"img.png"</span> <span class="c-class">class</span> = 
-             <span class="c-attr">"avatar avatar-sm"</span>  alt = "..." &gt;
-            </code>
-            <br>
-            <code>
-             &lt;<span class="c-div">img</span> src = <span class="c-attr">"img.png"</span> <span class="c-class">class</span> = 
-             <span class="c-attr">"avatar avatar-md"</span>  alt = "..." &gt;
-            </code>
-            <br>
-            <code>
-             &lt;<span class="c-div">img</span> src = <span class="c-attr">"img.png"</span> <span class="c-class">class</span> = 
-             <span class="c-attr">"avatar avatar-lg"</span>  alt = "..." &gt;
-            </code>
-            </div>    
-
+            <hr>
             <div class="container">
-                <h3>Square Avatar</h3>
-                <p> <span class="highlight">avatar-square</span> use this class inside of an img tag to make it behave like an avatar. 
+                
+                
+                <h3>Circular Avatar</h3>
+                <p> <span class="highlight">avatar</span> use this class inside of an img tag to make it behave like an
+                    avatar.
                     <br>
-                    To get different sizes use: <span class="highlight">avatar-sm | avatar-md | avatar-lg </span>,  
+                    To get different sizes use: <span class="highlight">avatar-sm | avatar-md | avatar-lg </span>,
                 </p>
-                <img src="/Assets/developer.png"  class="avatar-square avatar-sm" alt="developer.png" srcset="">
-                <img src="/Assets/developer.png"  class="avatar-square avatar-md" alt="devloper.png" srcset="">
-                <img src="/Assets/developer.png"  class="avatar-square avatar-lg" alt="developer.png" srcset="">            </div>
-                <div class="container container-highlight container-code">
-                    <code>  &lt;<span class="c-div">img</span> src = <span class="c-attr">"img.png"</span> <span class="c-class">class</span> = 
-                      <span class="c-attr">"avatar-sqaure avatar-sm"</span>  alt = "..." &gt;
-                     </code>
-                     <br>
-                     <code>
-                      &lt;<span class="c-div">img</span> src = <span class="c-attr">"img.png"</span> <span class="c-class">class</span> = 
-                      <span class="c-attr">"avatar-square avatar-md"</span>  alt = "..." &gt;
-                     </code>
-                     <br>
-                     <code>
-                      &lt;<span class="c-div">img</span> src = <span class="c-attr">"img.png"</span> <span class="c-class">class</span> = 
-                      <span class="c-attr">"avatar-sqaure avatar-lg"</span>  alt = "..." &gt;
-                     </code>
-                     </div>
+                
+                <img src="/Assets/developer.png" class="avatar avatar-sm" alt="developer.png" srcset="">
+                <img src="/Assets/developer.png" class="avatar avatar-md" alt="developer.png" srcset="">
+                <img src="/Assets/developer.png" class="avatar avatar-lg" alt="developer.png" srcset="">
+
+            <div class="container container-highlight container-code">
+                <code> &lt;<span class="c-div">img</span> src = <span class="c-attr">"img.png"</span> <span
+                        class="c-class">class</span> =
+                    <span class="c-attr">"avatar avatar-sm"</span> alt = "..." &gt;
+                </code>
+                <br>
+                <code>
+                    &lt;<span class="c-div">img</span> src = <span class="c-attr">"img.png"</span> <span
+                        class="c-class">class</span> =
+                    <span class="c-attr">"avatar avatar-md"</span> alt = "..." &gt;
+                </code>
+                <br>
+                <code>
+                    &lt;<span class="c-div">img</span> src = <span class="c-attr">"img.png"</span> <span
+                        class="c-class">class</span> =
+                    <span class="c-attr">"avatar avatar-lg"</span> alt = "..." &gt;
+                </code>
+                </div>
+
+
+                <h3>Square Avatar</h3>
+                <p> <span class="highlight">avatar-square</span> use this class inside of an img tag to make it behave
+                    like an avatar.
+                    <br>
+                    To get different sizes use: <span class="highlight">avatar-sm | avatar-md | avatar-lg </span>,
+                </p>
+                <img src="/Assets/developer.png" class="avatar-square avatar-sm" alt="developer.png" srcset="">
+                <img src="/Assets/developer.png" class="avatar-square avatar-md" alt="devloper.png" srcset="">
+                <img src="/Assets/developer.png" class="avatar-square avatar-lg" alt="developer.png" srcset="">
+
+
+            <div class="container container-highlight container-code">
+                <code> &lt;<span class="c-div">img</span> src = <span class="c-attr">"img.png"</span> <span
+                        class="c-class">class</span> =
+                    <span class="c-attr">"avatar-sqaure avatar-sm"</span> alt = "..." &gt;
+                </code>
+                <br>
+                <code>
+                    &lt;<span class="c-div">img</span> src = <span class="c-attr">"img.png"</span> <span
+                        class="c-class">class</span> =
+                    <span class="c-attr">"avatar-square avatar-md"</span> alt = "..." &gt;
+                </code>
+                <br>
+                <code>
+                    &lt;<span class="c-div">img</span> src = <span class="c-attr">"img.png"</span> <span
+                        class="c-class">class</span> =
+                    <span class="c-attr">"avatar-sqaure avatar-lg"</span> alt = "..." &gt;
+                </code>
+            </div>
+        </div>
+        <a href="#top" class="btn-to-top btn-float"><i class="fa fa-arrow-circle-o-up btn-float"></i></a>
+
             <footer>
-                <a class="btn highlight" href="/Components/Alert/alert.html"><< Alerts </a>          
-                <a class="btn highlight" href="/Components/Badge/badge.html">Badge >> </a>  
+                <a class="btn highlight" href="/Components/Alert/alert.html"><< Alerts </a> 
+                <a class="btn highlight" href="/Components/Badge/badge.html">Badge >></a>
             </footer>
-    
+
+
         </section>
 
-    <div>
-
-
-    </div>
 </body>
+
 </html>

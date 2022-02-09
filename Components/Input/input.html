@@ -1,56 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/component.css">
-    <title>Input</title>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+    <title>Glow | Input</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
+
 <body>
-    <div class="container">
+    <nav>
+        <h2 class="nav-brand"><a href="/index.html" class="nav-link nav-link link">GlowCss</a></h2>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="/index.html" class="nav-link nav-link link">Getting Started</a></li>
+            <li class="nav-item"><a href="/doc.html" class="active nav-link nav-link link">Documentation</a></li>
+            <li class="nav-item"><a href="https://github.com/purvasharmadev/glow-css" class="nav-link nav-link link">Github</a></li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <!-- COLUMN-1 -->
+        <section class="col-1 sidebar">
+            <h4>Quick Start</h4>
+            <a class="btn nav-link link" href="/doc.html">Installation</a>
 
-        <h1>Input</h1>
+            <h4>Components</h4>
+            <a class="btn nav-link link " href="/Components/Alert/alert.html">Alerts</a>
+            <a class="btn nav-link link" href="/Components/Avatar/avatar.html">Avatar</a>
+            <a class="btn nav-link link" href="/Components/Badge/badge.html">Badge</a>
+            <a href="/Components/Button/button.html" class="btn nav-link link">Button</a>
+            <a class="btn nav-link link" href="/Components/Cards/card.html">Cards</a>
+            <a class="btn nav-link link" href="/Components/Image/image.html">Image</a>
+            <a class="btn nav-link link active" href="/Components/Input/input.html">Input</a>
+        </section>
 
-        <!-- TextArea -->
-        <div class="input-container">
-            <h2>Textarea</h2>
-            <textarea class="input input-textarea" name="input-textarea" id="#teaxArea" placeholder="Enter a comment"></textarea>
-            <button class="btn btn-icon input-btn-left"><i class="fa fas fa-comment">Comment</i></button>
-        </div>
-        <br>
-        <!-- Form -->
-        <!-- Login Form -->
-        <div class="input-container">
-            <form action="" class="form-container">
-                <h2>Login Form</h2>
-                <label for="username">Name</label>
-                <input type="text" name="username" placeholder="Enter your name">
-                <label for="email">Email</label>
-                <input type="email" name="email" placeholder="Enter you email">
-                <label for="password">Password</label>
-                <input type="password" name="password" placeholder="Enter your Password" >
-                <button class="btn btn-primary-outline btn-icon input-btn-left"><i class="fa fas fa-instagram">Log In</i></button>
-            </form>
-        </div>
-        <br>
-        
-            <!-- Error input -->
-            <div class="input-container card">
-                <form action="" class="form-container">
-                    <h2>Error input</h2>
-                    <label for="username">Name</label>
-                    <input class="error" type="text" name="username" placeholder="Enter you name" value="wrong value">
-                    <p class="error-msg">* please enter correct value</p>
-                    <button class="btn btn-primary input-btn-left">Log In</button>
-                </form>
+        <!--COLUMN-2  -->
+        <section class="col-2 section-doc">
+            <h2>Input</h2>
+            <p> Inputs are necessary for user interaction with the website. Inputs are used to take information from the
+                user,
+                and then save the data to the server, accordingly. GlowCSS offers a <span
+                    class="highlight">input-container | form-container | input-textarea</span> classes to create
+                responsive input fields.
+            </p>
+            <hr>
+            <div class="container">
+                <h2>TextArea</h2>
+                <p> Text Area is used to take multiline inputs from user, most common use is for taking reviews and
+                    comments.
+                    .
+                </p>
+                <!-- TextArea -->
+                <div class="input-container">
+                    <h2>Textarea</h2>
+                    <textarea class="input-textarea" name="input-textarea" id="#textArea"
+                        placeholder="Enter a comment"></textarea>
+                    <button class="btn btn-icon input-btn-left"><i class="fa fas fa-comment">Comment</i></button>
+                </div>
+                <div class="container container-highlight container-code">
+                    <code>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"input-container"</span>&gt; <br>
+                        &lt;<span class="c-div">h2</span>&gt;TextArea &lt;<span class="c-div">/h2</span>&gt; <br>
+                        &lt;<span class="c-div">textarea</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"input-textarea"</span>
+                        <span class="c-class">placeholder</span> = <span class="c-attr">"Enter a Comment"</span>&gt;
+                        &lt;<span class="c-div">/textarea</span>&gt; <br>
+                        &lt;<span class="c-div">button</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"btn btn-primary input-btn-left"</span>&gt;
+                        Button &lt;<span class="c-div">/button</span>&gt; <br>
+                        &lt;<span class="c-div">/div</span>&gt;
+
+                    </code>
+                </div>
+
+                <h2>Forms</h2>
+                <!-- Login Form -->
+                <div class="input-container">
+                    <form action="" class="form-container">
+                        <h2>Login Form</h2>
+                        <label for="username">Name</label>
+                        <input type="text" name="username" placeholder="Enter your name">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Enter you email">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" placeholder="Enter your Password">
+                        <button class="btn btn-primary-outline btn-icon input-btn-left"><i
+                                class="fa fas fa-instagram">Log In</i></button>
+                    </form>
+
+                </div>
+
+
+                <div class="container container-highlight container-code">
+                    <code>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"input-container"</span>&gt; <br>
+                        &lt;<span class="c-div">form</span> <span class="c-class">action</span> = <span
+                            class="c-attr">""</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"form-container"</span>&gt; <br>
+                        &lt;<span class="c-div">h2</span>&gt;Login Form &lt;<span class="c-div">/h2</span>&gt;
+                        &lt;<span class="c-div">label</span> <span class="c-class">for</span> = <span
+                            class="c-attr">"username"</span>&gt;Name &lt;<span class="c-div">/label</span>&gt; <br>
+                        &lt;<span class="c-div">input</span> <span class="c-class">type</span> = <span
+                            class="c-attr">"text"</span> <span class="c-class">name</span> = <span
+                            class="c-attr">"username"</span> <span class="c-class">placeholder</span> = <span
+                            class="c-attr">"enter your name"</span>&gt; <br>
+                            
+                            &lt;<span class="c-div">label</span> <span class="c-class">for</span> = <span
+                            class="c-attr">"email"</span>&gt;Email &lt;<span class="c-div">/label</span>&gt; <br>
+                        &lt;<span class="c-div">input</span> <span class="c-class">type</span> = <span
+                            class="c-attr">"email"</span> <span class="c-class">name</span> = <span
+                            class="c-attr">"email"</span> <span class="c-class">placeholder</span> = <span
+                            class="c-attr">"enter your email"</span>&gt; <br>
+
+                            &lt;<span class="c-div">label</span> <span class="c-class">for</span> = <span
+                            class="c-attr">"password"</span>&gt;Password &lt;<span class="c-div">/label</span>&gt; <br>
+                        &lt;<span class="c-div">input</span> <span class="c-class">type</span> = <span
+                            class="c-attr">"password"</span> <span class="c-class">name</span> = <span
+                            class="c-attr">"password"</span> <span class="c-class">placeholder</span> = <span
+                            class="c-attr">"enter your password"</span>&gt; <br>
+
+                            &lt;<span class="c-div">button</span> <span class="c-class">class</span> = <span
+                            class="c-attr">"btn btn-primary input-btn-left"</span>&gt;
+                        Button &lt;<span class="c-div">/button</span>&gt; <br>
+                        &lt;<span class="c-div">/div</span>&gt;
+
+
+
+
+                    </code>
+                </div>
+
+                <h2>TextArea</h2>
+                <p>Text Area is used to take multiline inputs from user, most common use is for taking reviews and
+                    comments.</p>
+                <!-- Error input -->
+                <div class="input-container">
+                    <form action="" class="form-container">
+                        <h2>Error input</h2>
+                        <label for="username">Name</label>
+                        <input class="error" type="text" name="username" placeholder="Enter you name"
+                            value="wrong value">
+                        <p class="error-msg">* please enter correct value</p>
+                        <button class="btn btn-primary input-btn-left">Log In</button>
+                    </form>
+                </div>
+                <div class="container container-highlight container-code">
+                    <code>
+                        &lt;<span class="c-div">div</span> <span class="c-class">class</span> = <span
+                        class="c-attr">"input-container"</span>&gt; <br>
+                    &lt;<span class="c-div">form</span> <span class="c-class">action</span> = <span
+                        class="c-attr">""</span> <span class="c-class">class</span> = <span
+                        class="c-attr">"form-container"</span>&gt; <br>
+                    &lt;<span class="c-div">h2</span>&gt;Login Form &lt;<span class="c-div">/h2</span>&gt;
+                    &lt;<span class="c-div">label</span> <span class="c-class">for</span> = <span
+                        class="c-attr">"username"</span>&gt;Name &lt;<span class="c-div">/label</span>&gt; <br>
+                    &lt;<span class="c-div">input</span> <span class="c-class">class</span> = <span class="c-attr">"error"</span> <span class="c-class">type</span> = <span
+                        class="c-attr">"text"</span> <span class="c-class">name</span> = <span
+                        class="c-attr">"username"</span> <span class="c-class">placeholder</span> = <span
+                        class="c-attr">"enter your name"</span>&gt; <br>
+                        &lt;<span class="c-div">p</span> <span class="c-class">class</span> = <span class="c-attr">"error-msg"</span>&gt; * please enter the correct value &lt;<span class="c-div">/p</span>&gt;
+                        &lt;<span class="c-div">/div</span>&gt;
+                    </code>
+                </div>
+
             </div>
+            <footer>
+                <a class="btn highlight" href="/Components/Image/image.html"><< Image </a>          
+                <a class="btn highlight" href="/Components/Alert/alert.html">Alert >> </a>  
+            </footer>
 
-    </div>
-    
+            <a href="#top" class="btn-to-top btn-float"><i class="fa fa-arrow-circle-o-up btn-float"></i></a>
+
+        </section>
+
 </body>
+
 </html>
