@@ -165,14 +165,14 @@ main p{
     background-color: var(--BACKGROUND-COLOR);
     color: var(--PRIMARY-COLOR);
     text-align: center;
-    padding:2rem;   
+    padding:1rem;   
 }
 
 .col-2 .container-code{
     background-color: var(--PRIMARY-COLOR);
     color: var(--TEXT-COLOR);
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 300;
     overflow: auto;
     text-align: justify;
 }
