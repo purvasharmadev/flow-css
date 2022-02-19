@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@100&family=Sacramento&display=swap');
+@import url(/utility.css);
+
 
 /* Text Utilities */
 @import "/Components/Text-Utilities/text.css";
@@ -16,7 +18,8 @@
 @import "/Components/Image/image.css";
 /* Input */
 @import "/Components/Input/input.css";
-/*  */
+
+
 :root{
     /* Main Colors */
 
@@ -32,10 +35,14 @@
     --SUCESS-COLOR:#65a30d;
     --INFO-COLOR:#2563eb;
     --WARNING-COLOR:#ca8a04;
+    
+    /* Text Colors */
+    --GRAY-COLOR: grey;
+    --BLACK-COLOR: black;
 
     /* Font-Family */
     
-    --MAIN-FONT:'Merriweather', serif;
+    --MAIN-FONT:'Open Sans', sans-serif;
 }
 
 body{
