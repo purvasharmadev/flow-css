@@ -1,0 +1,58 @@
+
+/* Font Size */
+
+.text-xlg{
+    font-size: 3rem;
+}
+
+.text-lg{
+    font-size:2.5rem ;
+}
+
+.text-md{
+    font-size: 2rem;
+}
+
+.text-normal{
+    font-size: 1.5rem;
+}
+
+.text-sm{
+    font-size:1rem ;
+}
+
+
+/* Font Color */
+
+.color-primary{
+    color: var(--PRIMARY-COLOR);
+}
+
+.color-secondary{
+    color: var(--SECONDARY-COLOR);
+}
+
+.color-danger{
+    color: var(--DANGER-COLOR);
+}
+
+.color-sucess{
+    color: var((--SUCESS-COLOR));
+}
+
+.color-info{
+    color: var(--INFO-COLOR);
+}
+
+.color-warning{
+    color: var(--WARNING-COLOR);
+}
+
+.color-gray{
+    color: var(--GRAY-COLOR);
+}
+
+.color-black{
+    color: var(--BLACK-COLOR);
+}
+

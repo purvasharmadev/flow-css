@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/component.css">
+    <link rel="stylesheet" href="/doc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <title>Glow | Text</title>
+</head>
+<body>
+
+    <nav id="top">
+        <h2 class="nav-brand"><a href="/index.html" class="nav-link link">GlowCss</a></h2>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="/index.html" class="nav-link link">Getting Started</a></li>
+            <li class="nav-item"><a href="/doc.html" class="active nav-link link">Documentation</a></li>
+            <li class="nav-item"><a href="https://github.com/purvasharmadev/glow-css" class="nav-link link">Github</a></li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <!-- COLUMN-1 -->
+        <div class="col-1 sidebar">
+            <h4>Quick Start</h4>
+            <a class="btn link" href="/doc.html">Installation</a>
+            <a class="btn link active" href="/Components/Text-Utilities/text.html">Typography</a>
+
+            <h4>Components</h4>
+            <a class="btn link " href="/Components/Alert/alert.html">Alerts</a>
+            <a class="btn link" href="/Components/Avatar/avatar.html">Avatar</a>
+            <a class="btn link" href="/Components/Badge/badge.html">Badge</a>
+            <a href="/Components/Button/button.html" class="btn link">Button</a>
+            <a class="btn link" href="/Components/Cards/card.html">Cards</a>
+            <a class="btn link" href="/Components/Image/image.html">Image</a>
+            <a class="btn link" href="/Components/Input/input.html">Input</a>
+        </div>
+
+        <!--COLUMN-2  -->
+        <div class="col-2 section-doc">
+            <h2>Typography</h2>
+            <p>Typography describes the creative design of the text on your web pages.
+                <span class="highlight">GlowCss</span> offers different classes to help you with sizing of texts.
+            </p>
+            <hr>
+
+            <h2>Font Family</h2>
+            <p>By default GlowCss use <span class="highlight"><a href="fonts.google.com/specimen/Open+Sans#standard-styles" class="link">Open Sans</a></span> as main font.</p>
+            <div class="container container-code container-highlight">
+                <code class="c-attr">
+                    <p>&lt;-- Import the below link --&gt;</p>
+              'https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@100&family=Sacramento&display=swap'
+
+              <p>&lt;-- Css variable to specify font family --&gt;</p>
+              --MAIN-FONT:'Open Sans', sans-serif;
+            </code>
+            </div>
+
+            <h2>Font Size</h2>
+            <p>All default HTML headings &lt;h1&gt; ... &lt;h6&gt; are also available.
+             But for more convinence we introduce 5 classes <span class="highlight"> text-xlg | text-lg | text-md | text-md | text-normal | text-sm  </span>
+            </p>
+            <div class="container">
+                <p class="text-xlg">This is a extra large text</p>
+                <p class="text-lg">This is a large text</p>
+                <p class="text-md">This is a medium text</p>
+                <p class="text-normal">This is a normal text</p>
+                <p class="text-small">This is a small text</p>
+
+            </div>
+            <div class="container container-code container-highlight">
+                <code>
+                    <p>&lt; -- Font Size --&gt;</p>
+                    &lt;<span class="c-div">p</span>
+                    <span class="c-class">class</span> = 
+                    <span class="c-attr">"text-xlg"</span>&gt;
+                    This is a extra large text
+                    &lt;<span class="c-div">/p</span>&gt;
+                    <br>
+                    &lt;<span class="c-div">p </span>
+                    <span class="c-class">class</span> = 
+                    <span class="c-attr">"text-lg"</span>&gt;
+                    This is a large text
+                    &lt;<span class="c-div">/p</span>&gt;
+
+                    <br>
+                    &lt;<span class="c-div">p </span>
+                    <span class="c-class">class</span> = 
+                    <span class="c-attr">"text-md"</span>&gt;
+                    This is a medium text
+                    &lt;<span class="c-div">/p</span>&gt;
+                    <br>
+                    &lt;<span class="c-div">p</span>
+                    <span class="c-class">class</span> = 
+                    <span class="c-attr">"text-normal"</span>&gt;
+                    This is a normal text
+                    &lt;<span class="c-div">/p</span>&gt;
+                    <br>
+                    &lt;<span class="c-div">p </span>
+                    <span class="c-class">class</span> = 
+                    <span class="c-attr">"text-sm"</span>&gt;
+                    This is a small text
+                    &lt;<span class="c-div">/p</span>&gt;
+
+                </code>
+            </div>
+
+            <h2>Font Colors</h2>
+            <p>All themse colors and add-on black and gray are available.</p>
+         <div class="container">
+            <ul class="list-bullet-none">
+            <li class="text-normal color-primary pb-1">This is Primary text</li>
+            <li class="text-normal color-secondary pb-1">This is Secondary text</li>
+            <li class="text-normal color-danger pb-1">This is Danger text</li>
+            <li class="text-normal color-sucess pb-1">This is Sucess text</li>
+            <li class="text-normal color-info pb-1">This is a Information text</li>
+            <li class="text-normal color-warning pb-1">This is a Warning text</li>
+            <li class="text-normal color-gray pb-1">This is a Gray text</li>
+            <li class="text-normal color-black pb-1">This is a Black text</li>
+         </ul>
+         </div>
+         <div class="container container-code container-highlight">
+            <code>
+                <p>&lt; -- Font Colors --&gt;</p>
+                &lt;<span class="c-div">p</span>
+                <span class="c-class">class</span> = 
+                <span class="c-attr">"color-primary"</span>&gt;
+                This is a primary text
+                &lt;<span class="c-div">/p</span>&gt;
+                <br>
+
+                &lt;<span class="c-div">p</span>
+                <span class="c-class">class</span> = 
+                <span class="c-attr">"color-secondary"</span>&gt;
+                This is a secondary text
+                &lt;<span class="c-div">/p</span>&gt;
+                <br>
+
+                &lt;<span class="c-div">p</span>
+                <span class="c-class">class</span> = 
+                <span class="c-attr">"color-danger"</span>&gt;
+                This is a danger text
+                &lt;<span class="c-div">/p</span>&gt;
+                <br>
+
+                &lt;<span class="c-div">p</span>
+                <span class="c-class">class</span> = 
+                <span class="c-attr">"color-sucess"</span>&gt;
+                This is a sucess text
+                &lt;<span class="c-div">/p</span>&gt;
+                <br>
+
+                &lt;<span class="c-div">p</span>
+                <span class="c-class">class</span> = 
+                <span class="c-attr">"color-info"</span>&gt;
+                This is a info text
+                &lt;<span class="c-div">/p</span>&gt;
+                <br>
+
+                &lt;<span class="c-div">p</span>
+                <span class="c-class">class</span> = 
+                <span class="c-attr">"color-warning"</span>&gt;
+                This is a Warning text
+                &lt;<span class="c-div">/p</span>&gt;
+                <br>
+
+                &lt;<span class="c-div">p</span>
+                <span class="c-class">class</span> = 
+                <span class="c-attr">"color-gray"</span>&gt;
+                This is a gray text
+                &lt;<span class="c-div">/p</span>&gt;
+                <br>
+
+                &lt;<span class="c-div">p</span>
+                <span class="c-class">class</span> = 
+                <span class="c-attr">"color-black"</span>&gt;
+                This is a black text
+                &lt;<span class="c-div">/p</span>&gt;
+                <br>
+                </code>
+                </div>
+
+                <a href="#top" class="btn-to-top btn-float"><i class="fa fa-arrow-circle-o-up btn-float"></i></a>
+
+                <footer>
+                    <a class="btn highlight" href="/doc.html"><< Installation</a> 
+                    <a class="btn highlight" href="/Components/Alert/alert.html"> Alert >></a>
+                </footer>
+            
+    </div>
+
+    
+</body>
+</html>
