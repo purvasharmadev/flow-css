@@ -18,6 +18,8 @@
 @import "/Components/Image/image.css";
 /* Input */
 @import "/Components/Input/input.css";
+/* Snackbar and Modal */
+@import "/Components/snackbar/snackbar.css";
 
 
 :root{
@@ -50,15 +52,4 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: var(--MAIN-FONT);
-}
-
-.container{
-    margin: auto;
-    max-width: 900px;
-}
-
-.flex-container{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
 }
