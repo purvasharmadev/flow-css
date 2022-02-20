@@ -1,0 +1,49 @@
+@import url(/component.css);
+
+/* Snackbar */
+.snackbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  padding: 1rem;
+  background-color: var(--PRIMARY-COLOR);
+  color: var(--TEXT-COLOR);
+  border-radius: 5px;
+}
+
+snackbar .btn{
+  padding: 5px 5px;  
+}
+
+.snackbar .close-btn{
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+/* Snackbar Icon */
+.snackbar-icon{
+  padding-right: 10px;
+}
+
+/* Snackbar-warning */
+.snackbar-warning{
+  background-color: var(--WARNING-COLOR);
+}
+
+/* Snackbar-success */
+.snackbar-sucess{
+  background-color: var(--SUCESS-COLOR);
+}
+
+/* Snackbar-info */
+.snackbar-info{
+  background-color: var(--INFO-COLOR);
+}
+
+/* Snackbar-error */
+.snackbar-error{
+  background-color: var(--DANGER-COLOR);
+}
+
+.
