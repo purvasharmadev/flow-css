@@ -37,7 +37,7 @@
 }
 
 .color-sucess{
-    color: var((--SUCESS-COLOR));
+    color: var(--SUCESS-COLOR);
 }
 
 .color-info{
