@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/component.css">
+    <link rel="stylesheet" href="/doc.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Glow | Modal</title>
+</head>
+<body>
+    <nav id="top">
+        <h2 class="nav-brand"><a href="/index.html" class="nav-link link">GlowCss</a></h2>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="/index.html" class="nav-link link">Getting Started</a></li>
+            <li class="nav-item"><a href="/doc.html" class="active nav-link link">Documentation</a></li>
+            <li class="nav-item"><a href="https://github.com/purvasharmadev/glow-css" class="nav-link link">Github</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <!-- COLUMN-1 -->
+        <div class="col-1 sidebar">
+            <h4>Quick Start</h4>
+            <a class="btn link" href="/doc.html">Installation</a>
+            <a class="btn link" href="/Components/Text-Utilities/text.html">Typography</a>
+
+            <h4>Components</h4>
+            <a class="btn link " href="/Components/Alert/alert.html">Alerts</a>
+            <a class="btn link" href="/Components/Avatar/avatar.html">Avatar</a>
+            <a class="btn link" href="/Components/Badge/badge.html">Badge</a>
+            <a href="/Components/Button/button.html" class="btn link">Button</a>
+            <a class="btn link" href="/Components/Cards/card.html">Cards</a>
+            <a class="btn link" href="/Components/Image/image.html">Image</a>
+            <a class="btn link" href="/Components/Input/input.html">Input</a>
+            <a class="btn link" href="/Components/snackbar/snackbar.html">Snackbar</a>
+            <a class="btn link active" href="/Components/Modal/modal.html">Modal</a>
+        </div>
+
+                <!--COLUMN-2  -->
+                <div class="col-2 section-doc">
+                    <h2>Modal</h2>
+                    <p>Modal windows are user interface elements. They sit on top of the main interface, so they do not interfere with underlying workflows.
+                        They are information boxes that pop-ups wihtout disturbing the rest of the screen. <span class="highlight">GlowCss</span> allows you create different kind of modals.
+
+                    </p>
+                    <p> <span class="highlight">Note:</span> modal has z-index:1; and takes 100% width of parent div .</p>
+                    <hr>
+        
+                    <div class="container pt-1">
+                        <h2>Modal</h2>
+                        <div class="modal w-50 position-center">
+                            <div class="modal-body">
+                                <div class="modal-header">
+                                    <h2>Modal Header <span class="alert-close-btn">&times;</span></h2>
+                                </div>
+    
+                                <p class="modal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, accusamus.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, a.
+                                </p>
+                                <div class="modal-footer">
+                                <button class="modal-btn">option 1</button>
+                                <button class="modal-btn">option 2</button>
+                            </div>
+                
+                        </div>
+                    </div>
+
+                
+        
+                        <div class="container container-highlight container-code">
+                            <code>
+                                &lt;<span class="c-div">
+                                    div
+                                </span>
+                                <span class="c-class">
+                                    class
+                                </span>
+                                <span class="c-attr">
+                                    "modal"
+                                </span>
+                                &gt; <br>
+                                &lt;<span class="c-div">
+                                    div
+                                </span>
+                                <span class="c-class">
+                                    class
+                                </span>
+                                <span class="c-attr">
+                                    "modal-body"
+                                </span>
+                                &gt; <br>
+                                &lt;<span class="c-div">
+                                    div
+                                </span>
+                                <span class="c-class">
+                                    class
+                                </span>
+                                <span class="c-attr">
+                                    "modal-header"
+                                </span>
+                                &gt; <br>
+                                Modal Header
+                                &lt; <span class="c-div">span</span> <span class="c-class">class</span> = <span class="c-attr">"alert-close-btn"</span> &gt;
+                                &times; &lt; <span class="c-class">/span</span> &gt;
+
+                                <br> &lt;<span class="c-div">/div</span>&gt;
+
+                                <br>
+                                &lt;<span class="c-div">
+                                    div
+                                </span>
+                                <span class="c-class">
+                                    class
+                                </span>
+                                <span class="c-attr">
+                                    "modal-text"
+                                </span>
+                                &gt; <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, at.
+                                <br> &lt;<span class="c-div">/div </span>&gt; <br>
+                                &lt;<span class="c-div">
+                                    div
+                                </span>
+                                <span class="c-class">
+                                    class
+                                </span>
+                                <span class="c-attr">
+                                    "modal-footer"
+                                </span>
+                                &gt; <br>
+                                &lt; <span class="c-div">button</span> <span class="c-class">class</span> = <span class="c-attr">"modal-btn"</span> &gt;
+                                Option 1 &lt; <span class="c-class">/span</span> &gt; <br>
+                                &lt; <span class="c-div">button</span> <span class="c-class">class</span> = <span class="c-attr">"modal-btn"</span> &gt;
+                                Option 2 &lt; <span class="c-class">/span</span> &gt; 
+                                <br> &lt;<span class="c-div">/div</span>&gt;
+                                <br> &lt;<span class="c-div">/div </span>&gt;
+                                <br> &lt;<span class="c-div">/div </span>&gt;
+                            </code>
+                        </div>
+                        <p><span class="highlight">Note: </span>
+                            You can use <span class="highlight">position-center | position-left | position-right </span> 
+                            classes to position your modal, this classes use margin:auto, margin-left:auto, margin-right:auto resp.
+                         </p>
+                </div>
+
+                <footer>
+                    <a class="btn highlight bold" href="/Components/Snackbar/snackbar.html"><< Snackbar </a>
+                    <a class="btn highlight bold" href="/Components/Navbar/nav.html">Navbar >> </a>
+                </footer>
+                <a href="#top" class="btn-to-top btn-float"><i class="fa fa-arrow-circle-o-up btn-float"></i></a>
+        
+
+    </div>
+
+        
+</body>
+</html>

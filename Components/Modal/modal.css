@@ -1,0 +1,52 @@
+@import url(/component.css);
+
+
+/* modal */
+
+ .modal{
+     background-color: var(--BACKGROUND-COLOR);
+     border: 2px solid var(--SECONDARY-COLOR);
+     justify-content: center;
+     align-items: center;
+     z-index: 1; 
+     height: 100%;
+     overflow: auto; 
+ } 
+
+.modal-header{
+  border-bottom: 2px solid var(--SECONDARY-COLOR);
+}
+
+.modal-body{
+  padding: 10px;
+}
+
+.modal-text{
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.modal-btn{
+  color: var(--PRIMARY-COLOR);
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding: 1rem;
+
+}
+
+.modal-btn:hover{
+    color: var(--SECONDARY-COLOR);
+}
+
+.modal-footer{
+    display: flex;
+    justify-content: flex-end;
+    border-top: 2px solid var(--SECONDARY-COLOR);
+
+}
+
