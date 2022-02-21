@@ -84,6 +84,20 @@
   .position-fixed{
     position: fixed;
   }
+
+/* Position using Margin */
+.position-center{
+  margin: auto;
+}
+
+.postion-left{
+  margin-right:auto ;
+}
+
+.position-right{
+  margin-left: auto;
+}
+
   
   /* Basic typography classes */
   .bold{
@@ -144,3 +158,4 @@
     margin: auto;
     max-width: 56.25rem;
   }
+
