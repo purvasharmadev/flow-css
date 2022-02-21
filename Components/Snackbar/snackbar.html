@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/component.css">
+    <link rel="stylesheet" href="/doc.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Glow | Snackbar </title>
+</head>
+
+<body>
+    <nav id="top">
+        <h2 class="nav-brand"><a href="/index.html" class="nav-link link">GlowCss</a></h2>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="/index.html" class="nav-link link">Getting Started</a></li>
+            <li class="nav-item"><a href="/doc.html" class="active nav-link link">Documentation</a></li>
+            <li class="nav-item"><a href="https://github.com/purvasharmadev/glow-css" class="nav-link link">Github</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <!-- COLUMN-1 -->
+        <div class="col-1 sidebar">
+            <h4>Quick Start</h4>
+            <a class="btn link" href="/doc.html">Installation</a>
+            <a class="btn link" href="/Components/Text-Utilities/text.html">Typography</a>
+
+            <h4>Components</h4>
+            <a class="btn link " href="/Components/Alert/alert.html">Alerts</a>
+            <a class="btn link" href="/Components/Avatar/avatar.html">Avatar</a>
+            <a class="btn link" href="/Components/Badge/badge.html">Badge</a>
+            <a href="/Components/Button/button.html" class="btn link">Button</a>
+            <a class="btn link" href="/Components/Cards/card.html">Cards</a>
+            <a class="btn link" href="/Components/Image/image.html">Image</a>
+            <a class="btn link" href="/Components/Input/input.html">Input</a>
+            <a class="btn link active" href="/Components/snackbar/snackbar.html">Snackbar &
+                Modal</a>
+        </div>
+
+        <!--COLUMN-2  -->
+        <div class="col-2 section-doc">
+            <h2>Snackbar</h2>
+            <p> Snackbars are often used as a tooltips/popups to show a message at the bottom of the screen.</p>
+            <p> <span class="highlight">Note:</span> Snackbar has set width : 50%; It takes 50% of the parent element.</p>
+            <hr>
+
+            <div class="container pt-1">
+                <h2>Simple Snackbar</h2>
+                <div class="snackbar">
+                    Can't send photo. Retry in 5 seconds.
+                    <i class="fa fa-close close-btn"></i>
+                </div>
+
+                <div class="container container-highlight container-code">
+                    <code>
+                        &lt;<span class="c-div">
+                            div
+                        </span>
+                        <span class="c-class">
+                            class
+                        </span>
+                        <span class="c-attr">
+                            "snackbar"
+                        </span>
+                        &gt; <br>
+                        Can't send photo. Retry in 5 seconds. <br>
+                        &lt; <span class="c-class">span</span> &gt;
+                        &times; &lt; <span class="c-class">/span</span> &gt;
+                        <br> &lt;<span class="c-div"> /div </span>&gt;
+                    </code>
+                </div>
+
+
+                <h2>Snackbar with icon</h2>
+                <div class="snackbar snackbar-sucess">
+                    <div>
+                        <i class="fa fa-check-square snackbar-icon"> </i>
+                        Success !
+                    </div>
+                    <a href="#" class="link color-primary">Retry</a>
+
+                </div>
+                <br>
+                <div class="snackbar snackbar-warning">
+                    <div>
+                        <i class="fa fa-warning snackbar-icon"> </i>
+                        Warning !
+                    </div>
+                    <a href="#" class="link color-primary">Retry</a>
+
+                </div>
+
+                <br>
+                <div class="snackbar snackbar-info">
+                    <div>
+                        <i class="fa fa-info-circle snackbar-icon"> </i>
+                        Info !
+                    </div>
+                    <a href="#" class="link color-primary">Retry</a>
+
+                </div>
+
+                <br>
+                <div class="snackbar snackbar-error">
+                    <div>
+                        <i class="fa fa-info-circle snackbar-icon"> </i>
+                        Error !
+                    </div>
+                    <a href="#" class="link color-primary">Retry</a>
+
+                </div>
+
+                <div class="container container-highlight container-code">
+                    <code>
+                        <p>&lt; -- Snackbar-Success --&gt;</p>
+                        &lt;<span class="c-div">
+                            div
+                        </span>
+                        <span class="c-class">
+                            class
+                        </span>
+                        <span class="c-attr">
+                            "snackbar snackbar-sucess"
+                        </span>
+                        &gt; <br>
+                        &lt;
+                        <span class="c-div">svg</span>
+                        <span class="c-class">class</span>
+                        <span class="c-attr">"snackbar-icon"</span> &gt;
+                        &lt;<span class="c-div">/span</span>&gt; <br>
+                        Sucess !! <br>
+                        &lt; <span class="c-class">span</span> &gt;
+                        Retry &lt; <span class="c-class">/span</span> &gt;
+                        <br> &lt;<span class="c-div"> /div </span>&gt;
+
+                        <p>&lt; -- Snackbar-Warning --&gt;</p>
+                        &lt;<span class="c-div">
+                            div
+                        </span>
+                        <span class="c-class">
+                            class
+                        </span>
+                        <span class="c-attr">
+                            "snackbar snackbar-warning"
+                        </span>
+                        &gt; <br>
+                        &lt;
+                        <span class="c-div">svg</span>
+                        <span class="c-class">class</span>
+                        <span class="c-attr">"snackbar-icon"</span> &gt;
+                        &lt;<span class="c-div">/span</span>&gt; <br>
+                        Warning !! <br>
+                        &lt; <span class="c-class">span</span> &gt;
+                        Retry &lt; <span class="c-class">/span</span> &gt;
+                        <br> &lt;<span class="c-div"> /div </span>&gt;
+
+                        <p>&lt; -- Snackbar-Info --&gt;</p>
+                        &lt;<span class="c-div">
+                            div
+                        </span>
+                        <span class="c-class">
+                            class
+                        </span>
+                        <span class="c-attr">
+                            "snackbar snackbar-info"
+                        </span>
+                        &gt; <br>
+                        &lt;
+                        <span class="c-div">svg</span>
+                        <span class="c-class">class</span>
+                        <span class="c-attr">"snackbar-icon"</span> &gt;
+                        &lt;<span class="c-div">/span</span>&gt; <br>
+                        Info !! <br>
+                        &lt; <span class="c-class">span</span> &gt;
+                        Retry &lt; <span class="c-class">/span</span> &gt;
+                        <br> &lt;<span class="c-div"> /div </span>&gt;
+
+                        <p>&lt; -- Snackbar-Error --&gt;</p>
+                        &lt;<span class="c-div">
+                            div
+                        </span>
+                        <span class="c-class">
+                            class
+                        </span>
+                        <span class="c-attr">
+                            "snackbar snackbar-error"
+                        </span>
+                        &gt; <br>
+                        &lt;
+                        <span class="c-div">svg</span>
+                        <span class="c-class">class</span>
+                        <span class="c-attr">"snackbar-icon"</span> &gt;
+                        &lt;<span class="c-div">/span</span>&gt; <br>
+                        Error !! <br>
+                        &lt; <span class="c-class">span</span> &gt;
+                        Retry &lt; <span class="c-class">/span</span> &gt;
+                        <br> &lt;<span class="c-div"> /div </span>&gt;
+                    </code>
+                </div>
+    
+    
+
+        
+        </div>
+        <footer>
+            <a class="btn highlight bold" href="/Components/Text-Utilities/text.html"><< Input </a>
+            <a class="btn highlight bold" href="/Components/Text-Utilities/text.html">Modal >> </a>
+        </footer>
+        <a href="#top" class="btn-to-top btn-float"><i class="fa fa-arrow-circle-o-up btn-float"></i></a>
+
+
+    </div>
+
+
+</body>
+
+</html>
