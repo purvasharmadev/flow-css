@@ -18,8 +18,10 @@
 @import "/Components/Image/image.css";
 /* Input */
 @import "/Components/Input/input.css";
-/* Snackbar and Modal */
+/* Snackbar */
 @import "/Components/snackbar/snackbar.css";
+/* Modal */
+@import "/Components/Modal/modal.css";
 
 
 :root{
