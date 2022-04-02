@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/component.css">
+    <link rel="stylesheet" href="/doc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Glow | List</title>
+</head>
+<body>
+    <nav>
+        <h2 class="nav-brand"><a href="/index.html" class="nav-link nav-link link">GlowCss</a></h2>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="/index.html" class="nav-link nav-link link">Getting Started</a></li>
+            <li class="nav-item"><a href="/doc.html" class="active nav-link nav-link link">Documentation</a></li>
+            <li class="nav-item"><a href="https://github.com/purvasharmadev/glow-css" class="nav-link nav-link link">Github</a></li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <!-- COLUMN-1 -->
+        <section class="col-1 sidebar">
+            <h4>Quick Start</h4>
+            <a class="btn nav-link link" href="/doc.html">Installation</a>
+            <a class="btn link" href="/Components/Text-Utilities/text.html">Typography</a>
+
+            <h4>Components</h4>
+            <a class="btn nav-link link " href="/Components/Alert/alert.html">Alerts</a>
+            <a class="btn nav-link link" href="/Components/Avatar/avatar.html">Avatar</a>
+            <a class="btn nav-link link" href="/Components/Badge/badge.html">Badge</a>
+            <a href="/Components/Button/button.html" class="btn nav-link link">Button</a>
+            <a class="btn nav-link link" href="/Components/Cards/card.html">Cards</a>
+            <a class="btn nav-link link " href="/Components/Image/image.html">Image</a>
+            <a class="btn nav-link link" href="/Components/Input/input.html">Input</a>
+            <a class="btn nav-link link active" href="/Components/List/list.html">List</a>
+            <a class="btn link " href="/Components/Modal/modal.html">Modal</a>
+            <a class="btn link" href="/Components/Rating/rating.html">Rating</a>
+            <a class="btn link" href="/Components/Snackbar/snackbar.html">Snackbar</a>     
+           </section>
+
+        <!--COLUMN-2  -->
+        <section class="col-2 section-doc">
+                <h2>List</h2>
+                <p> 
+                    A list is a record of short pieces of related information or used to display the data or any information in web pages in the ordered or unordered form.
+                    GlowCss defines basic list style classes like <span class="highlight"> list | | list-border | list-item | list-item-border | list-title | list-item-hover | list-item-background. </span>
+                </p>
+                <p><span class="highlight">Note:</span>By default the list takes 100% width of parent's full width.
+                    In the given example the text alignments, font sizes are done using utitlity classes to make classes customizable. </p>
+            <hr>
+            <div class="container">
+            <h3>Simple Ordered List</h3>
+            <ol class="list list-border w-50 position-center">
+                <li class="list-item list-title color-white text-center text-normal">List Title</li>
+                <li value="1" class="list-item list-item-border list-item-hover list-item-background ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li class="list-item list-item-border list-item-hover list-item-background ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li class="list-item list-item-border list-item-hover list-item-background ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li class="list-item list-item-border list-item-hover list-item-background ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li class="list-item list-item-border list-item-hover list-item-background ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ol>
+
+            <div class="container container-highlight container-code">
+                <code>
+                    &lt;<span class="c-div">ol</span></span> <span
+                    class="c-class">class</span> =<span class="c-attr">"list list-broder"</span>&gt;
+                    <br>
+                    &lt;<span class="c-div">li</span></span> <span
+                    class="c-class">class</span> =<span class="c-attr">"list-item list-title"</span>&gt;
+                  <br>  Title<br>
+                    &lt;<span class="c-div">/li</span></span>&gt;<br>
+                    &lt;<span class="c-div">li</span></span> 
+                    <span
+                    class="c-class">value</span> =<span class="c-attr">"1"</span>
+                    <span
+                    class="c-class">class</span> =<span class="c-attr">"list-item list-item-border list-item-hover list-item-background"</span>&gt;
+                  <br>  Lorem ipsum dolor sit amet consectetur. <br>
+                    &lt;<span class="c-div">/li</span></span>&gt;<br>
+                    &lt;<span class="c-div">/li</span></span>&gt;<br>
+                    &lt;<span class="c-div">li</span></span> <span
+                    class="c-class">class</span> =<span class="c-attr">"list-item list-item-border list-item-hover list-item-background"</span>&gt;
+                  <br>  Lorem ipsum dolor sit amet consectetur. <br>
+                    &lt;<span class="c-div">/li</span></span>&gt;<br>
+                    &lt;<span class="c-div">/ol</span></span>&gt;
+                    <br>
+                </code>
+
+            </div>    
+
+
+            <h3>Simple UnOrdered List</h3>
+            <ul class="list list-border w-50 position-center">
+                <li class="list-item list-title color-white text-center text-normal">List Title</li>
+                <li class="list-item list-item-border list-item-hover list-item-background ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li class="list-item list-item-border list-item-hover list-item-background ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li class="list-item list-item-border list-item-hover list-item-background ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li class="list-item list-item-border list-item-hover list-item-background ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li class="list-item list-item-border list-item-hover list-item-background ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+            <div class="container container-highlight container-code">
+                <code>
+                    &lt;<span class="c-div">ul</span></span> <span
+                    class="c-class">class</span> =<span class="c-attr">"list list-broder"</span>&gt;
+                    <br>
+                    &lt;<span class="c-div">li</span></span> <span
+                    class="c-class">class</span> =<span class="c-attr">"list-item list-title"</span>&gt;
+                  <br>  Title<br>
+                    &lt;<span class="c-div">/li</span></span>&gt;<br>
+                    &lt;<span class="c-div">li</span></span> <span
+                    class="c-class">class</span> =<span class="c-attr">"list-item list-item-border list-item-hover list-item-background"</span>&gt;
+                  <br>  Lorem ipsum dolor sit amet consectetur. <br>
+                    &lt;<span class="c-div">/li</span></span>&gt;<br>
+                    &lt;<span class="c-div">/li</span></span>&gt;<br>
+                    &lt;<span class="c-div">li</span></span> <span
+                    class="c-class">class</span> =<span class="c-attr">"list-item list-item-border list-item-hover list-item-background"</span>&gt;
+                  <br>  Lorem ipsum dolor sit amet consectetur. <br>
+                    &lt;<span class="c-div">/li</span></span>&gt;<br>
+                    &lt;<span class="c-div">/ul</span></span>&gt;
+                    <br>
+                </code>
+
+            </div>
+            <h3>Simple Stacked List</h3>
+            <ul class="list list-border w-100 list-bullet-none position-center">
+                <li class="list-item list-title color-white text-center text-normal">List Title</li>
+                <li class="list-item list-item-border list-item-hover list-item-background ">
+                    <div class="flex flex-space-between align-item-center">
+                        <div class="flex">
+                            <img src="/Assets/rm-nature.jpg" class="avatar avatar-square avatar-sm" alt="developer.png" srcset="">
+                            <p class="pl-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+
+                            <i class="fa fa-plus-circle fa-2x color-info"></i>                    
+
+                    </div>
+                </li>
+                <li class="list-item list-item-border list-item-hover list-item-background ">
+                    <div class="flex flex-space-between align-item-center">
+
+
+                        <div class="flex">
+                            <img src="/Assets/rm-nature.jpg" class="avatar avatar-square avatar-sm" alt="developer.png" srcset="">
+                            <p class="pl-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, culpa.</p>
+                        </div>
+
+                            <i class="fa fa-plus-circle fa-2x color-info"></i>                    
+
+                    </div>
+                </li>
+                <li class="list-item list-item-border list-item-hover list-item-background ">
+                    <div class="flex flex-space-between align-item-center">
+                        <div class="flex">
+                            <img src="/Assets/rm-nature.jpg" class="avatar avatar-square avatar-sm" alt="developer.png" srcset="">
+                            <p class="pl-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+
+                            <i class="fa fa-plus-circle fa-2x color-info"></i>                    
+
+                    </div>
+                </li>
+            </ul>
+
+            <div class="container container-highlight container-code">
+                <code>
+                    &lt;<span class="c-div">ul</span></span> <span
+                    class="c-class">class</span> =<span class="c-attr">"list list-broder list-bullet-none"</span>&gt;
+                    <br>
+                    &lt;<span class="c-div">li</span></span> <span
+                    class="c-class">class</span> =<span class="c-attr">"list-item list-title"</span>&gt;
+                   Title
+                    &lt;<span class="c-div">/li</span></span>&gt;<br>
+                    &lt;<span class="c-div">li</span></span> <span
+                    class="c-class">class</span> =<span class="c-attr">"list-item list-item-border list-item-hover list-item-background"</span>&gt;
+                  <br>
+                  &lt;<span class="c-div">div</span></span> <span
+                  class="c-class">class</span> =<span class="c-attr">"flex flex-space-between align-item-center"</span>&gt;
+                   <br>
+                   &lt;<span class="c-div">div</span></span> <span
+                   class="c-class">class</span> =<span class="c-attr">"flex"</span>&gt;
+                   <br>
+                   &lt;<span class="c-div">img</span> src = <span class="c-attr">"img.png"</span> <span
+                        class="c-class">class</span> =
+                    <span class="c-attr">"avatar avatar-sm"</span> alt = "..." &gt; <br>
+                    &lt;<span class="c-div">p</span></span> <span
+                    class="c-class">class</span> =<span class="c-attr">"pl-1"</span>&gt;
+                    Lorem ipsum dolor sit amet.
+                    &lt;<span class="c-div">/p</span></span>&gt;<br>
+                    &lt;<span class="c-div">/div</span></span>&gt;<br>
+                    &lt;<span class="c-div">button</span> <span class="c-class">class</span> = <span
+                    class="c-attr">"btn btn-icon"</span>&gt;
+                    &lt;<span class="c-div">svg</span>&gt;
+                    &lt;<span class="c-div">/svg</span>&gt; Home
+                &lt;<span class="c-div">/button</span>&gt; <br>
+                    &lt;<span class="c-div">/div</span></span>&gt;<br>
+
+                    &lt;<span class="c-div">/li</span></span>&gt;<br>
+                    &lt;<span class="c-div">/li</span></span>&gt;<br>
+                    &lt;<span class="c-div">/ul</span></span>&gt;
+                    <br>
+                </code>
+
+            </div>
+        </div>
+        <footer>
+            <a class="btn highlight" href="/Components/Input/input.html"><< Input </a>          
+            <a class="btn highlight" href="/Components/Modal/modal.html"> Modal >> </a>  
+        </footer>    
+        <a href="#top" class="btn-to-top btn-float"><i class="fa fa-arrow-circle-o-up btn-float"></i></a>
+        </section>
+
+
+    
+</body>
+</html>

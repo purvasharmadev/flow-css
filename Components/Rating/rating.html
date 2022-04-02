@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/component.css">
+    <link rel="stylesheet" href="/doc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Glow | Rating</title>
+</head>
+<body>
+    <nav>
+        <h2 class="nav-brand"><a href="/index.html" class="nav-link nav-link link">GlowCss</a></h2>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="/index.html" class="nav-link nav-link link">Getting Started</a></li>
+            <li class="nav-item"><a href="/doc.html" class="active nav-link nav-link link">Documentation</a></li>
+            <li class="nav-item"><a href="https://github.com/purvasharmadev/glow-css" class="nav-link nav-link link">Github</a></li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <!-- COLUMN-1 -->
+        <section class="col-1 sidebar">
+            <h4>Quick Start</h4>
+            <a class="btn nav-link link" href="/doc.html">Installation</a>
+            <a class="btn link" href="/Components/Text-Utilities/text.html">Typography</a>
+
+            <h4>Components</h4>
+            <a class="btn nav-link link " href="/Components/Alert/alert.html">Alerts</a>
+            <a class="btn nav-link link" href="/Components/Avatar/avatar.html">Avatar</a>
+            <a class="btn nav-link link" href="/Components/Badge/badge.html">Badge</a>
+            <a href="/Components/Button/button.html" class="btn nav-link link">Button</a>
+            <a class="btn nav-link link" href="/Components/Cards/card.html">Cards</a>
+            <a class="btn nav-link link" href="/Components/Image/image.html">Image</a>
+            <a class="btn nav-link link" href="/Components/Input/input.html">Input</a>
+            <a class="btn link" href="/Components/List/list.html">List</a>
+            <a class="btn link" href="/Components/Modal/modal.html">Modal</a>
+            <a class="btn link active" href="/Components/Rating/rating.html">Rating</a>
+            <a class="btn link" href="/Components/Snackbar/snackbar.html">Snackbar</a>
+
+        </section>
+
+        <!--COLUMN-2  -->
+        <section class="col-2 section-doc">
+                <h2>Rating</h2>
+                <p> 
+                    Rating provides user to rate products/ blogs/ articles on a website.
+                    GlowCss offers styling classes for rating system such as <span class="highlight">
+                        star-rating-hover | star-rating-checked
+                    </span>
+                    <p><span class="highlight">Note:</span> star-rating-hover is parent class. </p>
+                </p>
+            <hr>
+            <div class="container">
+            <h3>star-rating-hover</h3>
+            <div class="star-rating star-rating-hover w-50 position-center text-center">
+                <span class="fa fa-star fa-2x p-1"></span>
+                <span class="fa fa-star fa-2x p-1"></span>
+                <span class="fa fa-star fa-2x p-1"></span>
+                <span class="fa fa-star fa-2x p-1 "></span>
+                <span class="fa fa-star fa-2x p-1 "></span>
+    
+            </div>
+
+
+            <div class="container container-highlight container-code">
+                <code>
+                    &lt;<span class="c-div">div</span> <span class="c-class">class</span> = <span class="c-attr">"star-rating-hover"</span>&gt;<br>
+                   &lt;<span class="c-div">span</span>&gt; &lt;<span class="c-div">svg</span>&gt; &lt;<span class="c-div">/svg</span>&gt;
+                   &lt;<span class="c-div">/span</span>&gt; <br>
+                    &lt;<span class="c-div">/div</span>&gt;
+                    <br>
+                </code>
+
+            </div>    
+
+
+            <h3>star-rating-checked</h3>
+            <div class="star-rating star-rating-hover  w-50 position-center text-center">
+                <span class="fa fa-star fa-2x star-rating-checked p-1"></span>
+                <span class="fa fa-star fa-2x star-rating-checked p-1"></span>
+                <span class="fa fa-star fa-2x star-rating-checked p-1"></span>
+                <span class="fa fa-star fa-2x p-1 "></span>
+                <span class="fa fa-star fa-2x p-1"></span>
+    
+            </div>
+
+
+            <div class="container container-highlight container-code">
+                <code>
+                    &lt;<span class="c-div">div</span>&gt;<br>
+                   &lt;<span class="c-div">span</span>&gt; &lt;<span class="c-div">svg   <span class="c-class">class</span> = <span class="c-attr">"star-rating-checked"</span> </span>&gt; &lt;<span class="c-div">/svg</span>&gt;
+                   &lt;<span class="c-div">/span</span>&gt; <br>
+                    &lt;<span class="c-div">/div</span>&gt;
+                    <br>
+                </code>
+
+            </div>
+
+
+        </div>
+        <footer>
+            <a class="btn highlight" href="/Components/Modal/modal.html"><< Modal </a>          
+            <a class="btn highlight" href="/Components/Snackbar/snackbar.html"> Snackbar >> </a>  
+        </footer>    
+        <a href="#top" class="btn-to-top btn-float"><i class="fa fa-arrow-circle-o-up btn-float"></i></a>
+        </section>
+    
+        <script>
+            const star = document.querySelector("")
+
+            star.addEventListener("click",()=>{
+                console.log("cliked")
+            })
+        </script>
+</body>
+</html>
