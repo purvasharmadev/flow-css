@@ -18,6 +18,8 @@
 @import "/Components/Image/image.css";
 /* Input */
 @import "/Components/Input/input.css";
+/* List */
+@import "/Components/List/list.css";
 /* Snackbar */
 @import "/Components/snackbar/snackbar.css";
 /* Modal */
