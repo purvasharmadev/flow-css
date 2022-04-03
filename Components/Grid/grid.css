@@ -4,7 +4,7 @@
 }
 
 .grid-columns-two{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2,1fr);
 }
 
 .grid-gap-1{
@@ -12,11 +12,11 @@
 }
 
 .grid-columns-three{
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
 }
 
 .grid .grid-ex{
-    height: 350px;
+    height: 21.87rem;
     border: 1px solid;
     background-color:var(--BACKGROUND-COLOR);
 }
