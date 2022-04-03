@@ -4,6 +4,8 @@
 
 /* Text Utilities */
 @import "/Components/Text-Utilities/text.css";
+/* Grid */
+@import "/Components/Grid/grid.css";
 /* Alert */
 @import "/Components/Alert/alert.css";
 /* Avatar */
