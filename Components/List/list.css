@@ -1,0 +1,52 @@
+
+/* Ordered list */
+
+ol {
+    list-style-position: inside;
+  }
+
+
+/* UnOrdered list */
+
+ul{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+
+/* List */
+
+.list{
+    padding: 1rem;
+}
+
+.list-border{
+    border: 2px solid var(--PRIMARY-COLOR);
+}
+
+.list .list-title{
+    background-color: var(--PRIMARY-COLOR);
+    list-style: none;
+}
+
+
+/* List item */
+.list-item{
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+.list-item-background{
+    background-color: var(--WHITE-COLOR);
+}
+
+.list-item-border{
+    border-bottom: 1px solid var(--SECONDARY-COLOR) ;
+}
+
+.list-item-hover:hover{
+    background-color:var(--WHITE-COLOR);
+    color: var(--GRAY-COLOR)
+}
+

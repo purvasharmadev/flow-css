@@ -1,0 +1,12 @@
+.star-rating {
+  box-shadow: 0px 0px 5px orange;
+}
+
+.star-rating-checked {
+  color: orange;
+}
+
+.star-rating-hover span:hover {
+  cursor: pointer;
+  color: orange;
+}
