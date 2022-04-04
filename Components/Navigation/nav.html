@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/component.css">
+    <link rel="stylesheet" href="/doc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Glow | Nav</title>
+</head>
+<body>
+    <nav id="top" class="doc-nav">
+         <h2 class="doc-nav-brand"><a href="/index.html" class="doc-nav-link  link">GlowCss</a></h2>
+        <ul class="doc-nav-list">
+            <li class="doc-nav-item"><a href="/index.html" class="doc-nav-link  link">Getting Started</a></li>
+            <li class="doc-nav-item"><a href="/doc.html" class="active doc-nav-link  link">Documentation</a></li>
+            <li class="doc-nav-item"><a href="https://github.com/purvasharmadev/glow-css" class="doc-nav-link nav-link link">Github</a></li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <!-- COLUMN-1 -->
+        <section class="col-1 sidebar">
+            <h4>Quick Start</h4>
+            <a class="btn nav-link link" href="/doc.html">Installation</a>
+            <a class="btn link" href="/Components/Text-Utilities/text.html">Typography</a>
+            <a class="btn link" href="/Components/Grid/grid.html">Grid</a>
+
+            <h4>Components</h4>
+            <a class="btn nav-link link " href="/Components/Alert/alert.html">Alerts</a>
+            <a class="btn nav-link link" href="/Components/Avatar/avatar.html">Avatar</a>
+            <a class="btn nav-link link" href="/Components/Badge/badge.html">Badge</a>
+            <a href="/Components/Button/button.html" class="btn nav-link link">Button</a>
+            <a class="btn nav-link link" href="/Components/Cards/card.html">Cards</a>
+            <a class="btn nav-link link" href="/Components/Image/image.html">Image</a>
+            <a class="btn nav-link link" href="/Components/Input/input.html">Input</a>
+            <a class="btn link" href="/Components/List/list.html">List</a>
+            <a class="btn link " href="/Components/Modal/modal.html">Modal</a>
+            <a class="btn link active " href="/Components/Navigation/nav.html">Navbar</a>
+            <a class="btn link" href="/Components/Rating/rating.html">Rating</a>
+            <a class="btn link" href="/Components/Snackbar/snackbar.html">Snackbar</a>
+        </section>
+
+        <!--COLUMN-2  -->
+        <section class="col-2 section-doc">
+                <h2>NavBar</h2>
+                <p> 
+                    NavBar allows user to navigate through webpages by grouping the links in a nav element. GlowCSS uses Nav semantic tag and gives classes like
+                    <span class="highlight"> navbar-list | nav-item | nav-list | nav-brand | nav-link | nav-resp |  nav-toggle</span> to create Responsive navbar which looks
+                     good while serving the purpose.
+                </p>
+                <p><span class="highlight">Note:</span> Resize the browser window to see responisve property. </p>
+            <hr>
+            <div class="container">
+            <h3>Simple Responsive Navbar</h3>
+        <nav class="bg-primary color-white">
+                 <h2 class="nav-brand">
+                     <img src="/Assets/rm-nature.jpg" class="nav-logo  img-responsive img-rounded" alt="" srcset="">
+                    <a href="/index.html" class="nav-link link">BrandName</a>
+                </h2>                
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="active  nav-link link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link  link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link">Contact</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="container container-highlight container-code">
+                <code>
+                    &lt;<span class="c-div">nav</span>
+                    <span class="c-class">class</span> = <span class="c-attr">"bg-primary color-white"</span>
+                    &gt;
+                    <br>
+                    &lt;<span class="c-div">div</span>&gt;
+                    <br>
+                    &lt;<span class="c-div">svg</span> <span class="c-class">class</span> = <span class="c-attr">"nav-logo img-responsive img-rounded"</span>&gt;
+                    &lt;<span class="c-div">/svg</span>&gt;
+                    <br>
+                    &lt;<span class="c-div">a</span> <span class="c-class">href</span> = <span class="c-attr">"#"</span>
+                    <span class="c-class">class</span> = <span class="c-attr">"nav-link link"</span>
+                    &gt;
+                    BrandName
+                     &lt;<span class="c-div">/a</span>&gt;
+
+                    <br>
+                    &lt;<span class="c-div">/div</span>&gt;
+                    <br>
+                    &lt;<span class="c-div">ul</span> <span class="c-class">class</span> = <span class="c-attr">"nav-list"</span>&gt;
+                    <br>
+                    &lt;<span class="c-div">li</span> <span class="c-class">class</span> = <span class="c-attr">"nav-item"</span> &gt;
+                    <br>
+                    &lt;<span class="c-div">a</span> <span class="c-class">href</span> = <span class="c-attr">"#"</span>
+                    <span class="c-class">class</span> = <span class="c-attr">"nav-link link"</span>
+                    &gt;
+                    Home
+                     &lt;<span class="c-div">/a</span>&gt;
+                     &lt;<span class="c-div">/li</span>&gt;
+                     <br>
+
+
+                    &lt;<span class="c-div">li</span> <span class="c-class">class</span> = <span class="c-attr">"nav-item"</span> &gt;
+                    <br>
+                    &lt;<span class="c-div">a</span> <span class="c-class">href</span> = <span class="c-attr">"#"</span>
+                    <span class="c-class">class</span> = <span class="c-attr">"nav-link link"</span>
+                    &gt;
+                    About
+                     &lt;<span class="c-div">/a</span>&gt;
+                     &lt;<span class="c-div">/li</span>&gt;
+                     <br>
+
+                     &lt;<span class="c-div">li</span> <span class="c-class">class</span> = <span class="c-attr">"nav-item"</span> &gt;
+                     <br>
+                     &lt;<span class="c-div">a</span> <span class="c-class">href</span> = <span class="c-attr">"#"</span>
+                     <span class="c-class">class</span> = <span class="c-attr">"nav-link link"</span>
+                     &gt;
+                     Contact
+                      &lt;<span class="c-div">/a</span>&gt;
+                      &lt;<span class="c-div">/li</span>&gt;
+                      <br>
+
+                     &lt;<span class="c-div">/ul</span>&gt;
+
+                 &lt;<span class="c-div">/nav</span>&gt;
+                    <br>
+                </code>
+
+            </div>    
+
+            <h3>Responsive NavBar with Toggle</h3>
+
+            <nav class="bg-primary color-white position-relative nav-resp">
+                <h2 class="nav-brand">
+                    <img src="/Assets/rm-nature.jpg" class="nav-logo img-responsive img-rounded" alt="" srcset="">
+                   <a href="/index.html"<li class="nav-link link">BrandName</a>
+               </h2>  
+               <span class="nav-toggle nav-link">
+                &#9776;
+               </span>              
+               <ul class="navbar-list">
+                <li class="nav-item"><a href="#" class=" nav-link link">Home</a></li>
+                   <li class="nav-item"><a href="#" class=" nav-link link">About</a></li>
+                   <li class="nav-item"><a href="#" class="nav-link  link">Contact</a></li>
+               </ul>
+           </nav>
+<br><br>
+
+
+            <div class="container container-highlight container-code">
+                <code>
+                    &lt;<span class="c-div">nav</span>
+                    <span class="c-class">class</span> = <span class="c-attr">"nav-resp position-relative bg-primary color-white"</span>
+                    &gt;
+                    <br>
+                    &lt;<span class="c-div">h2</span>&gt;
+                    <br>
+                    &lt;<span class="c-div">svg</span> <span class="c-class">class</span> = <span class="c-attr">"nav-logo img-responsive img-rounded"</span>&gt;
+                    &lt;<span class="c-div">/svg</span>&gt;
+                    <br>
+                    &lt;<span class="c-div">a</span> <span class="c-class">href</span> = <span class="c-attr">"#"</span>
+                    <span class="c-class">class</span> = <span class="c-attr">"nav-link link"</span>
+                    &gt;
+                    BrandName
+                     &lt;<span class="c-div">/a</span>&gt;
+
+                     <br>
+                     &lt;<span class="c-div">/h2</span>&gt;
+<br>
+<span class="color-secondary">  &lt;!-- Toggle , You can use #9776; for toggle icon --&gt;</span> 
+                   <br>
+                   &lt;<span class="c-div">span</span> <span class="c-class">class</span> = <span class="c-attr">"nav-toggle"</span>&gt;
+                   &#9776;
+                   &lt;<span class="c-div">/span</span>&gt;
+
+                    <br>
+                    <span class="color-secondary">  &lt;!-- Navbar List --&gt;</span> 
+<br>
+                    &lt;<span class="c-div">ul</span> <span class="c-class">class</span> = <span class="c-attr">"navbar-list"</span>&gt;
+                    <br>
+                    &lt;<span class="c-div">li</span> <span class="c-class">class</span> = <span class="c-attr">"nav-item"</span> &gt;
+                    <br>
+                    &lt;<span class="c-div">a</span> <span class="c-class">href</span> = <span class="c-attr">"#"</span>
+                    <span class="c-class">class</span> = <span class="c-attr">"nav-link link"</span>
+                    &gt;
+                    Home
+                     &lt;<span class="c-div">/a</span>&gt;
+                     &lt;<span class="c-div">/li</span>&gt;
+                     <br>
+
+
+                    &lt;<span class="c-div">li</span> <span class="c-class">class</span> = <span class="c-attr">"nav-item"</span> &gt;
+                    <br>
+                    &lt;<span class="c-div">a</span> <span class="c-class">href</span> = <span class="c-attr">"#"</span>
+                    <span class="c-class">class</span> = <span class="c-attr">"nav-link link"</span>
+                    &gt;
+                    About
+                     &lt;<span class="c-div">/a</span>&gt;
+                     &lt;<span class="c-div">/li</span>&gt;
+                     <br>
+
+                     &lt;<span class="c-div">li</span> <span class="c-class">class</span> = <span class="c-attr">"nav-item"</span> &gt;
+                     <br>
+                     &lt;<span class="c-div">a</span> <span class="c-class">href</span> = <span class="c-attr">"#"</span>
+                     <span class="c-class">class</span> = <span class="c-attr">"nav-link link"</span>
+                     &gt;
+                     Contact
+                      &lt;<span class="c-div">/a</span>&gt;
+                      &lt;<span class="c-div">/li</span>&gt;
+                      <br>
+
+                     &lt;<span class="c-div">/ul</span>&gt;
+
+                 &lt;<span class="c-div">/nav</span>&gt;
+                    <br>
+                </code>
+
+
+
+            </div>
+        </div>
+        <footer>
+            <a class="btn highlight" href="/Components/Modal/modal.html"><< Modal </a>          
+            <a class="btn highlight" href="/Components/Rating/rating.html"> Rating >> </a>  
+        </footer>    
+        <a href="#top" class="btn-to-top btn-float"><i class="fa fa-arrow-circle-o-up btn-float"></i></a>
+        </section>
+
+
+
+
+
+        <!-- JS for Toggle -->
+
+        <script>
+            const navToggle = document.getElementsByClassName("nav-toggle")[0]
+            const navList = document.getElementsByClassName("navbar-list")[0]
+
+
+            function ClickHandler(){
+                navList.classList.toggle('toggle-active')
+             }
+
+            navToggle.addEventListener("click",ClickHandler)
+        </script>
+    
+</body>
+</html>

@@ -28,6 +28,8 @@
 @import "/Components/snackbar/snackbar.css";
 /* Modal */
 @import "/Components/Modal/modal.css";
+/* Navigation */
+@import "/Components/Navigation/nav.css";
 
 
 :root{
